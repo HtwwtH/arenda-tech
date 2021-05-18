@@ -5,6 +5,7 @@
 @import 'libs';
 @import 'global';
 
+// header общее
 .header{
   position: fixed;
   width: 100%;
@@ -35,6 +36,7 @@
   }
 }
 
+// внутренние элементы header top
 .header__top {
   .link {
     font-weight: 700;
@@ -119,4 +121,86 @@
   }
 }
 
+// внутренние элементы header bot
+.header__bot {
+  nav {
+    height: inherit;
+    ul {
+      display: flex;
+      li {
+        cursor: pointer;
+        margin-right: 48px;
+        a {
+          line-height: 40px;
+          color: $gray;
+        }
+        &:hover {
+          opacity: .5;
+        }
+        &:active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
 
+// выпадающее меню каталог
+.header__catalog {
+  display: none;
+  @include media-tablet-horizontal {
+    display: block;
+    height: 545px;
+  }
+
+  .catalog__inner {
+    align-items: flex-start;
+    padding: 28px 0 43px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 160px;
+    margin-right: 32px;
+  }
+
+  .category {
+    margin-bottom: 12px;
+  }
+
+  .category-title {
+    display: block;
+    position: relative;
+    width: 100%;
+    @extend %bebas-neue-font;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    color: $gray;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px solid $yellow;
+    }
+  }
+
+  .subcategory {
+    margin-left: 8px;
+  }
+
+  .subcategory a span {
+    @extend %text-font;
+    font-size: 12px;
+    line-height: 15px;
+    color: $gray;
+  }
+}

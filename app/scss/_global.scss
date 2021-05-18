@@ -38,7 +38,7 @@ body {
 	font-family: 'Bebas Neue';
 	font-style: normal;
   font-weight: 700;
-	src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+	src: url(../fonts/Bebas_Neue/BebasNeue-Bold.ttf);
 	font-display: swap;
 }
 
@@ -63,6 +63,8 @@ body {
 
 	@include media-tablet {
 		max-width: 700px;
+		padding-left: 0;
+  	padding-right: 0;
 	}
 
 	@include media-tablet-horizontal {
@@ -119,6 +121,18 @@ body {
       fill: $orange;
     }
   }
+}
+
+li.dropdown{
+	&:after {
+		content: url(../images/icons/dropdown.svg);
+		display: inline-block;
+		margin-left: 2px;
+		transition: all .3s ease;
+	}
+	&:hover:after {
+		transform: rotate(90deg);
+	}
 }
 
 
