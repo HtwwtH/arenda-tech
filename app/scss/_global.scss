@@ -3,6 +3,45 @@ body {
 	height: 100%;
 }
 
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+  font-weight: 400;
+	src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+  font-weight: 500;
+	src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+  font-weight: 700;
+	src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+  font-weight: 700;
+	src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+	font-display: swap;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -17,8 +56,69 @@ body {
 }
 
 .container{
-  max-width: 1504px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
+	max-width: 100%;
+
+	@include media-tablet {
+		max-width: 700px;
+	}
+
+	@include media-tablet-horizontal {
+		max-width: 708px;
+	}
+
+	@include media-laptop {
+		max-width: 1120px;
+	}
+
+	@include media-pc {
+		max-width: 1504px;
+	}
+}
+
+// строка поиска
+.search {
+  background: rgba(236, 239, 241, 0.3);
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  input {
+    padding: 0 16px 0 12px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    opacity: 1;
+    line-height: 40px;
+    caret-color: $yellow;
+    &::placeholder {
+      color: white;
+      opacity: 0.4;
+    }
+  }
+  button {
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    path {
+      fill: white;
+    }
+
+    &:hover path {
+      fill: $yellow;
+    }
+    &:active path {
+      fill: $orange;
+    }
+  }
 }
 
 

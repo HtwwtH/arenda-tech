@@ -1,0 +1,28 @@
+@mixin media-pda {
+    @media (min-width: $mediaWidthPda) {
+        @content;
+    }
+}
+@mixin media-tablet {
+    @media (min-width: $mediaWidthTablet) {
+        @content;
+    }
+}
+
+@mixin media-tablet-horizontal {
+    @media (min-width: $mediaWidthTabletHorizontal) {
+        @content;
+    }
+}
+
+@mixin media-laptop {
+    @media (min-width: $mediaWidthLaptop) {
+        @content;
+    }
+}
+
+@mixin media-pc {
+    @media (min-width: $mediaWidthPC) {
+        @content;
+    }
+}

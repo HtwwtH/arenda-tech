@@ -46,6 +46,14 @@ button,
 textarea,
 select {
   font: inherit;
+    outline: none;
+}
+
+button {
+  display: flex;
+  cursor: pointer;
+  padding: 0;
+  border: none;
 }
 
 a{

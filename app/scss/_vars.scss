@@ -1,0 +1,16 @@
+$gray: #424242;
+$light-gray: #ECEFF1;
+$yellow: #FFD600;
+$orange: #FFAB00;
+
+$mediaWidthMobile: 320px;
+$mediaWidthPda: 480px;
+$mediaWidthTablet: 768px;
+$mediaWidthTabletHorizontal: 1124px;
+$mediaWidthLaptop: 1440px;
+$mediaWidthPC: 1880px;
+
+%text-font{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
