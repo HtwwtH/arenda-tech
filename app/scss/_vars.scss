@@ -3,12 +3,24 @@ $light-gray: #ECEFF1;
 $yellow: #FFD600;
 $orange: #FFAB00;
 
+$xs3: 4px;
+$xs2: 8px;
+$xs: 16px;
+$s: 24px;
+$m: 32px;
+$l: 48px;
+$xl: 64px;
+$xl2: 72px;
+$xl3: 96px;
+$xl4: 144px;
+
 $mediaWidthMobile: 320px;
-$mediaWidthPda: 480px;
-$mediaWidthTablet: 768px;
-$mediaWidthTabletHorizontal: 1124px;
-$mediaWidthLaptop: 1440px;
-$mediaWidthPC: 1880px;
+$mediaWidthPda: 480px;  //xsm
+$mediaWidthPdaBig: 640px; //sm
+$mediaWidthTablet: 768px; //md
+$mediaWidthTabletHorizontal: 1124px;  //lg
+$mediaWidthLaptop: 1440px;  //xl
+$mediaWidthPC: 1880px;  //xxl
 
 %text-font{
   font-family: 'Montserrat', sans-serif;

@@ -1,27 +1,32 @@
-@mixin media-pda {
+@mixin media-xsm {
     @media (min-width: $mediaWidthPda) {
         @content;
     }
 }
-@mixin media-tablet {
+@mixin media-sm {
+    @media (min-width: $mediaWidthPdaBig) {
+        @content;
+    }
+}
+@mixin media-md {
     @media (min-width: $mediaWidthTablet) {
         @content;
     }
 }
 
-@mixin media-tablet-horizontal {
+@mixin media-lg {
     @media (min-width: $mediaWidthTabletHorizontal) {
         @content;
     }
 }
 
-@mixin media-laptop {
+@mixin media-xl {
     @media (min-width: $mediaWidthLaptop) {
         @content;
     }
 }
 
-@mixin media-pc {
+@mixin media-xxl {
     @media (min-width: $mediaWidthPC) {
         @content;
     }

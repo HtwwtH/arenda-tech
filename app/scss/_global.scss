@@ -46,6 +46,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	padding-top: 60px;
+	@include media-md {
+		padding-top: 88px;
+	}
+	@include media-lg {
+		padding-top: 128px;
+	}
 }
 
 .main {
@@ -61,21 +68,21 @@ body {
   margin: 0 auto;
 	max-width: 100%;
 
-	@include media-tablet {
+	@include media-md {
 		max-width: 700px;
 		padding-left: 0;
   	padding-right: 0;
 	}
 
-	@include media-tablet-horizontal {
+	@include media-lg {
 		max-width: 708px;
 	}
 
-	@include media-laptop {
+	@include media-xl {
 		max-width: 1120px;
 	}
 
-	@include media-pc {
+	@include media-xxl {
 		max-width: 1504px;
 	}
 }
@@ -123,6 +130,11 @@ body {
   }
 }
 
+a {
+	cursor: pointer;
+	color: $gray;
+}
+
 li.dropdown{
 	&:after {
 		content: url(../images/icons/dropdown.svg);
@@ -135,6 +147,418 @@ li.dropdown{
 	}
 }
 
+// hover эффекты
+.hover-opacity {
+	&:hover {
+		opacity: .5;
+	}
+	&:active {
+		opacity: 1;
+	}
+}
+.hover-yellow {
+	&:hover {
+		color: $yellow!important;
+	}
+	&:active {
+		color: $orange!important;
+	}
+}
+
+// modificators
+.visible {
+	display: block;
+}
+
+// displaying
+.d-block {
+	display: block;
+}
+.d-flex {
+	display: flex;
+}
+.d-xl {
+	display: none;
+	@include media-xl {
+		display: block;
+	}
+}
+
+// inline font styles 
+.color-yellow {
+	color: $yellow!important;
+}
+.color-white {
+	color: white!important;
+}
+.underlined {
+	text-decoration: underline;
+}
+
+// margins
+.mb-0 {
+	margin-bottom: 0;
+}
+.mb-3xs {
+	margin-bottom: $xs3;
+}
+.mb-2xs {
+	margin-bottom: $xs2;
+}
+.mb-xs {
+	margin-bottom: $xs;
+}
+.mb-s {
+	margin-bottom: $s;
+}
+.mb-m {
+	margin-bottom: $m;
+}
+.mb-l {
+	margin-bottom: $l;
+}
+.mb-xl {
+	margin-bottom: $xl;
+}
+.mb-2xl {
+	margin-bottom: $xl2;
+}
+.mb-3xl {
+	margin-bottom: $xl3;
+}
+.mb-4xl {
+	margin-bottom: $xl4;
+}
+.mb-xsm-0 {
+	@include media-xsm {
+		margin-bottom: 0;
+	}
+}
+.mb-xsm-3xs {
+	@include media-xsm {
+		margin-bottom: $xs3;
+	}
+}
+.mb-xsm-2xs {
+	@include media-xsm {
+		margin-bottom: $xs2;
+	}
+}
+.mb-xsm-xs {
+	@include media-xsm {
+		margin-bottom: $xs;
+	}
+}
+.mb-xsm-s {
+	@include media-xsm {
+		margin-bottom: $s;
+	}
+}
+.mb-xsm-m {
+	@include media-xsm {
+		margin-bottom: $m;
+	}
+}
+.mb-xsm-l {
+	@include media-xsm {
+		margin-bottom: $l;
+	}
+}
+.mb-xsm-xl {
+	@include media-xsm {
+		margin-bottom: $xl;
+	}
+}
+.mb-xsm-2xl {
+	@include media-xsm {
+		margin-bottom: $xl2;
+	}
+}
+.mb-xsm-3xl {
+	@include media-xsm {
+		margin-bottom: $xl3;
+	}
+}
+.mb-xsm-4xl {
+	@include media-xsm {
+		margin-bottom: $xl4;
+	}
+}
+.mb-sm-0 {
+	@include media-sm {
+		margin-bottom: 0;
+	}
+}
+.mb-sm-3xs {
+	@include media-sm {
+		margin-bottom: $xs3;
+	}
+}
+.mb-sm-2xs {
+	@include media-sm {
+		margin-bottom: $xs2;
+	}
+}
+.mb-sm-xs {
+	@include media-sm {
+		margin-bottom: $xs;
+	}
+}
+.mb-sm-s {
+	@include media-sm {
+		margin-bottom: $s;
+	}
+}
+.mb-sm-m {
+	@include media-sm {
+		margin-bottom: $m;
+	}
+}
+.mb-sm-l {
+	@include media-sm {
+		margin-bottom: $l;
+	}
+}
+.mb-sm-xl {
+	@include media-sm {
+		margin-bottom: $xl;
+	}
+}
+.mb-sm-2xl {
+	@include media-sm {
+		margin-bottom: $xl2;
+	}
+}
+.mb-sm-3xl {
+	@include media-sm {
+		margin-bottom: $xl3;
+	}
+}
+.mb-sm-4xl {
+	@include media-sm {
+		margin-bottom: $xl4;
+	}
+}
+.mb-md-0 {
+	@include media-md {
+		margin-bottom: 0;
+	}
+}
+.mb-md-3xs {
+	@include media-md {
+		margin-bottom: $xs3;
+	}
+}
+.mb-md-2xs {
+	@include media-md {
+		margin-bottom: $xs2;
+	}
+}
+.mb-md-xs {
+	@include media-md {
+		margin-bottom: $xs;
+	}
+}
+.mb-md-s {
+	@include media-md {
+		margin-bottom: $s;
+	}
+}
+.mb-md-m {
+	@include media-md {
+		margin-bottom: $m;
+	}
+}
+.mb-md-l {
+	@include media-md {
+		margin-bottom: $l;
+	}
+}
+.mb-md-xl {
+	@include media-md {
+		margin-bottom: $xl;
+	}
+}
+.mb-md-2xl {
+	@include media-md {
+		margin-bottom: $xl2;
+	}
+}
+.mb-md-3xl {
+	@include media-md {
+		margin-bottom: $xl3;
+	}
+}
+.mb-md-4xl {
+	@include media-md {
+		margin-bottom: $xl4;
+	}
+}
+.mb-lg-0 {
+	@include media-lg {
+		margin-bottom: 0;
+	}
+}
+.mb-lg-3xs {
+	@include media-lg {
+		margin-bottom: $xs3;
+	}
+}
+.mb-lg-2xs {
+	@include media-lg {
+		margin-bottom: $xs2;
+	}
+}
+.mb-lg-xs {
+	@include media-lg {
+		margin-bottom: $xs;
+	}
+}
+.mb-lg-s {
+	@include media-lg {
+		margin-bottom: $s;
+	}
+}
+.mb-lg-m {
+	@include media-lg {
+		margin-bottom: $m;
+	}
+}
+.mb-lg-l {
+	@include media-lg {
+		margin-bottom: $l;
+	}
+}
+.mb-lg-xl {
+	@include media-lg {
+		margin-bottom: $xl;
+	}
+}
+.mb-lg-2xl {
+	@include media-lg {
+		margin-bottom: $xl2;
+	}
+}
+.mb-lg-3xl {
+	@include media-lg {
+		margin-bottom: $xl3;
+	}
+}
+.mb-lg-4xl {
+	@include media-lg {
+		margin-bottom: $xl4;
+	}
+}
+.mb-xl-0 {
+	@include media-xl {
+		margin-bottom: 0;
+	}
+}
+.mb-xl-3xs {
+	@include media-xl {
+		margin-bottom: $xs3;
+	}
+}
+.mb-xl-2xs {
+	@include media-xl {
+		margin-bottom: $xs2;
+	}
+}
+.mb-xl-xs {
+	@include media-xl {
+		margin-bottom: $xs;
+	}
+}
+.mb-xl-s {
+	@include media-xl {
+		margin-bottom: $s;
+	}
+}
+.mb-xl-m {
+	@include media-xl {
+		margin-bottom: $m;
+	}
+}
+.mb-xl-l {
+	@include media-xl {
+		margin-bottom: $l;
+	}
+}
+.mb-xl-xl {
+	@include media-xl {
+		margin-bottom: $xl;
+	}
+}
+.mb-xl-2xl {
+	@include media-xl {
+		margin-bottom: $xl2;
+	}
+}
+.mb-xl-3xl {
+	@include media-xl {
+		margin-bottom: $xl3;
+	}
+}
+.mb-xl-4xl {
+	@include media-xl {
+		margin-bottom: $xl4;
+	}
+}
+.mb-xxl-0 {
+	@include media-xxl {
+		margin-bottom: 0;
+	}
+}
+.mb-xxl-3xs {
+	@include media-xxl {
+		margin-bottom: $xs3;
+	}
+}
+.mb-xxl-2xs {
+	@include media-xxl {
+		margin-bottom: $xs2;
+	}
+}
+.mb-xxl-xs {
+	@include media-xxl {
+		margin-bottom: $xs;
+	}
+}
+.mb-xxl-s {
+	@include media-xxl {
+		margin-bottom: $s;
+	}
+}
+.mb-xxl-m {
+	@include media-xxl {
+		margin-bottom: $m;
+	}
+}
+.mb-xxl-l {
+	@include media-xxl {
+		margin-bottom: $l;
+	}
+}
+.mb-xxl-xl {
+	@include media-xxl {
+		margin-bottom: $xl;
+	}
+}
+.mb-xxl-2xl {
+	@include media-xxl {
+		margin-bottom: $xl2;
+	}
+}
+.mb-xxl-3xl {
+	@include media-xxl {
+		margin-bottom: $xl3;
+	}
+}
+.mb-xxl-4xl {
+	@include media-xxl {
+		margin-bottom: $xl4;
+	}
+}
 
 
 
