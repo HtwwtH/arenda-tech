@@ -178,8 +178,10 @@
     width: 160px;
     margin-bottom: 12px;
     margin-right: 22px;
-    @include media-xxl {
+    @include media-xl {
       margin-right: 32px;
+    }
+    @include media-xxl {
       width: 224px;
     }
     .category__list .subcategory:first-child {
@@ -500,8 +502,8 @@
   }
 
   .catalog-content {
-    width: 136px;
-    &:not(:last-child){
+    width: 50%;
+    &:not(:nth-child(2)){
       margin-right: 16px;
     }
     &:nth-child(3){
@@ -513,6 +515,9 @@
     
     @include media-xsm {
       width: 33%;
+      &:nth-child(2){
+        margin-right: 16px;
+      } 
       &:nth-child(3){
         display: block;
       } 
@@ -527,7 +532,7 @@
   }
 
   .category {
-    width: 136px;
+    width: 100%;
     @include media-md {
       width: 100%;
       max-width: 165px;
