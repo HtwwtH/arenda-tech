@@ -166,7 +166,6 @@
 
   .catalog-content {
     width: 160px;
-    margin-right: 32px;
     @include media-xl {
       width: 192px;
     }
@@ -178,8 +177,9 @@
   .category {
     width: 160px;
     margin-bottom: 12px;
-    margin-right: 32px;
+    margin-right: 22px;
     @include media-xxl {
+      margin-right: 32px;
       width: 224px;
     }
     .category__list .subcategory:first-child {
