@@ -83,7 +83,7 @@ function pageStyles() {
 
 function build() {
   return src([
-    'app/css/style.min.css',
+    'app/css/*.css',
     'app/fonts/**/*',
     'app/js/*.min.js',
     'app/*.html'

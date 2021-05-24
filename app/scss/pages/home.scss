@@ -8,7 +8,7 @@
 @import '../global';
 
 .main-banner {
-  height: 423px;
+  height: 444px;
   @include media-xl {
     height: 524px;
   }
@@ -90,10 +90,10 @@
       padding-left: 10%;
     }
     @include media-xl { 
-      padding-left: 30%;
+      padding-left: 33%;
     }
     @include media-xxl { 
-      padding-left: 47.5%;
+      padding-left: 47.2%;
     }
   }
 
@@ -111,6 +111,14 @@
     }
     @include media-xl {
       object-position: 38%;
+    }
+  }
+}
+
+.offer__items.profi {
+  .offer__item {
+    @include media-xl {
+      max-width: 351px;
     }
   }
 }

@@ -16,7 +16,7 @@
   z-index: 15;
   &__top {
     background: $gray;
-    height: 60px;
+    height: 69px;
     box-shadow: 0px 4px 7px rgba(120, 120, 120, 0.35);
     @include media-md {
       box-shadow: none;
@@ -62,7 +62,11 @@
     }
   }
   .link-phone {
-    margin-left: auto;
+    margin-left: 88px;
+    margin-right: 0;
+    @include media-md {
+      margin-left: auto;
+    }
     @include media-xl {
       margin-left: 0;
     }
@@ -222,7 +226,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
 }
 
 .category-title {
@@ -397,11 +400,10 @@
     @include media-xl {
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 1fr;
-      .info-block {
+    }
+    @include media-xxl {
+      .info-block:nth-child(2) {
         grid-column: span 2;
-      }
-      .info-block:nth-child(1), .info-block:nth-child(2) {
-        grid-column: span 3;
       }
     }
   }
@@ -460,36 +462,55 @@
       .info-block {
         width: 23%;
       }
-      .info-block:not(:last-child) {
-        margin-right: 32px;
+      .info-block:first-child {
+        margin-right: 56px;
+      }
+      .info-content a {
+        display: block;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 4px;
       }
       .info-block:nth-child(2) {
         width: 54%;
         .info-content {
           height: 270px;
-          ul {
-            height: inherit;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-
-            li {
-              margin-right: 21px;
-              @include media-xxl {
-                margin-right: 32px;
-              }
-            }
-          }
+        }
+      }
+      .info-block:nth-child(2) .info-content ul {
+        height: inherit;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .info-block:nth-child(2) .info-content ul li {
+        margin-right: 21px;
+      }
+    }
+    @include media-xxl {
+      .info-block:first-child {
+        margin-right: 72px;
+      }
+      .info-block:nth-child(2) .info-content ul li {
+        @include media-xxl {
+          width: 236px;
+          margin-right: 32px;
         }
       }
     }
   }
 
   .info-flexbox:nth-child(2) {
-    .info-content p, .info-content a {
+    .info-content p {
       font-size: 12px;
       line-height: 15px;
+    }
+    .info-content a {
+      display: block;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 8px;
     }
     @include media-xl {
       flex-direction: row;
