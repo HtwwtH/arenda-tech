@@ -1,7 +1,9 @@
 $gray: #424242;
 $light-gray: #ECEFF1;
+$dark-gray: #161616;
 $yellow: #FFD600;
 $orange: #FFAB00;
+$gradient: linear-gradient(180deg, #FFD600 0.01%, #F9D849 38.54%, #FFAB00 100%);
 
 $xs3: 4px;
 $xs2: 8px;
@@ -22,12 +24,16 @@ $mediaWidthTabletHorizontal: 1124px;  //lg
 $mediaWidthLaptop: 1440px;  //xl
 $mediaWidthPC: 1880px;  //xxl
 
-%text-font{
+%text-font {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
-%bebas-neue-font{
+%bebas-neue-font {
   font-family: 'Bebas Neue', cursive;
   font-weight: 700;
+}
+
+%transition {
+  transition: all .3s ease-in-out;
 }

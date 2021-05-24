@@ -31,14 +31,14 @@ $(document).ready(function () {
   $searchBtn = $("#showSearch");
   $searchBtn.click(function () {
     if ($search.hasClass('visible')) {
-      $search.css({ opacity: 1 }).animate({ opacity: 0 });
+      $search.css({ opacity: 1 }).animate({ opacity: 0 }, 200);
       setTimeout(function () {
         $search.removeClass('visible');
-      }, 500)
+      }, 300)
     }
     else {
       $search.addClass('visible');
-      $search.css({ opacity: 0 }).animate({ opacity: 1 });
+      $search.css({ opacity: 0 }).animate({ opacity: 1 }, 200);
     }
   })
 
