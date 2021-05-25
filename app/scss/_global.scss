@@ -88,6 +88,11 @@ body {
 	}
 }
 
+// во всю ширину экрана
+.container-big {
+	width: 100%;
+}
+
 .justify-between-container {
 	padding-left: 8px;
   padding-right: 8px;
@@ -282,12 +287,23 @@ h2, span.h2-style {
 		flex-direction: row;
 		padding-left: 0;
 	}
-	li:not(:last-child):after {
-		content: '/';
-		font-size: 10px;
-		color: $light-gray;
-		margin-left: 1px;
-		margin-right: 3px;
+	li:not(:last-child) {
+		&:after {
+			content: '/';
+			font-size: 10px;
+			color: $light-gray;
+			margin-left: 1px;
+			margin-right: 3px;
+		}
+		&:hover a {
+			color: $orange;
+			text-decoration: underline;
+		}
+		&:active a {
+			text-decoration: none;
+			color: $gray;
+			opacity: 0.5;
+		}
 	}
 	li a {
 		font-size: 12px;
@@ -349,6 +365,37 @@ h2, span.h2-style {
 		height: 100%;
 		color: $light-gray;
 	}
+}
+
+.info-banner {
+  button {
+    width: 100%;
+    max-width: 376px;
+  }
+  p, .h2-style {
+    color: $gray;
+    @include media-lg {
+      color: $light-gray;
+    }
+  }
+  .container {
+    order: 1;
+    position: relative;
+    @include media-lg { 
+      order: 0;
+      position: absolute;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    position: relative;
+    order: 0;
+    width: 100%;
+    @include media-lg {
+      order: 1;
+    }
+  }
 }
 
 // инфо разделы в нижней части

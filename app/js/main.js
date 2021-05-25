@@ -43,10 +43,8 @@ $(document).ready(function () {
   })
 
   // slide down subcategories on catalog page on mobile version
-  $catalogSection = $('.catalog-section .catalog__inner');
   $catalogContent = $('.catalog-section .catalog-content');
   $catalogCategory = $('.category');
-  $catalogLink = $catalogContent.find('.category-title');
   $catalogCategory.each(function () {
     if ($(this).find('.category__list').length != 0) {
       $(this).find('.category-title').removeAttr('href');
@@ -65,5 +63,21 @@ $(document).ready(function () {
       $(this).siblings('.category__list').slideDown(300);
     }
 
+  })
+
+  // show sorting on mobile
+  $sortingBtn = $('#showSorting');
+  $sorting = $('.sort-mobile');
+  $sortingBtn.click(function () {
+    if ($sorting.is(':visible')) {
+      $sorting.slideUp(300);
+      $sortingBtn.find('.show').removeClass('d-none');
+      $sortingBtn.find('.close').addClass('d-none');
+    }
+    else {
+      $sorting.slideDown(300);
+      $sortingBtn.find('.show').addClass('d-none');
+      $sortingBtn.find('.close').removeClass('d-none');
+    }
   })
 })
