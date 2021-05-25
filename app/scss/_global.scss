@@ -233,6 +233,7 @@ h2, span.h2-style {
 		max-width: 256px!important;
 	}
 	span {
+		color: $gray;
 		margin: 0 auto;
 		z-index: 4;
 	}
@@ -271,6 +272,33 @@ h2, span.h2-style {
 }
 
 // elements
+// breadcrumbs
+.breadcrumbs {
+	position: absolute;
+	top: 24px;
+	ol {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		padding-left: 0;
+	}
+	li:not(:last-child):after {
+		content: '/';
+		font-size: 10px;
+		color: $light-gray;
+		margin-left: 1px;
+		margin-right: 3px;
+	}
+	li a {
+		font-size: 12px;
+		line-height: 15px;
+		color: $light-gray;
+	}
+	li.active a {
+		cursor: default;
+		opacity: .5;
+	}
+}
 // подчеркнутые снизу секции
 .underlined-section {
 	position: relative;
