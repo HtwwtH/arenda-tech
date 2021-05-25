@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аренда техники</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="header__inner container">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img class="logo-pc" src="./images/logo.png" alt="logo">
+            <img class="logo-mobile" src="./images/logo-mobile.png" alt="logo">
+          </a>
+        </div>
+        <a href="mailto:e-mail@mail.ru" class="link link-mail">e-mail@mail.ru</a>
+        <a href="tel:+7 (800) 999-00-00" class="link link-phone">+7 (800) 999-00-00</a>
+        <div class="header__search">
+          <div id="search-content" class="search">
+            <input type="text" name="search" value="" placeholder="Введите запрос">
+            <button type="search-submit" id="search-submit">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.09071 1.80095e-08C7.25587 -2.50484e-05 8.39658 0.334018 9.37751 0.962497C10.3584 1.59098 11.1384 2.48751 11.6249 3.54573C12.1113 4.60395 12.2839 5.77944 12.122 6.93273C11.9602 8.08602 11.4708 9.1687 10.7118 10.0523L16 15.3379L15.3376 16L10.0484 10.7135C9.30249 11.3511 8.41343 11.799 7.45696 12.0192C6.5005 12.2393 5.50496 12.2252 4.55516 11.9779C3.60535 11.7306 2.7294 11.2576 2.00192 10.599C1.27444 9.94047 0.716974 9.11595 0.377009 8.19566C0.0370426 7.27538 -0.0753542 6.2866 0.0493907 5.31355C0.174136 4.34049 0.532326 3.41199 1.09346 2.60711C1.65459 1.80223 2.40203 1.14483 3.27213 0.690889C4.14223 0.23695 5.10921 -7.54365e-05 6.09071 1.80095e-08ZM6.09071 0.936494C4.72398 0.936494 3.41322 1.47916 2.44679 2.4451C1.48036 3.41105 0.93743 4.72116 0.93743 6.08721C0.93743 7.45327 1.48036 8.76337 2.44679 9.72932C3.41322 10.6953 4.72398 11.2379 6.09071 11.2379C7.45744 11.2379 8.7682 10.6953 9.73463 9.72932C10.7011 8.76337 11.244 7.45327 11.244 6.08721C11.244 4.72116 10.7011 3.41105 9.73463 2.4451C8.7682 1.47916 7.45744 0.936494 6.09071 0.936494Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__bot">
+      <div class="header__inner container">
+        <nav>
+          <ul>
+            <li id="showCatalog" class="dropdown hover-opacity">
+              <a href="/catalog">Аренда спецтехники</a>
+            </li>
+            <li class="hover-opacity">
+              <a href="/contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="light-gray-btn d-xxl-block">Получить консультацию</button>
+      </div>
+    </div>
+
+    <div class="header__catalog">
+      <div class="catalog__inner container">
+        <div class="catalog-content">
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Бульдозера</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Автогрейдеры</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>С рыхлителем</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>С бульдозерным отвалом</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>С рыхлителем</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>С рыхлителем</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Трубоукладчики</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Установки гнб</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Асфальтоукладчики</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Колесные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Тракторы</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Тракторы-экскаваторы</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Траншеекопатели</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>С щеткой</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Бары</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Трубоукладчики</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Установки гнб</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Трубоукладчики</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Установки гнб</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search__block_mobile">
+      <div id="search-content" class="search">
+        <input type="text" name="search" value="" placeholder="Введите запрос">
+        <button type="search-submit" id="search-submit">
+          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.09071 1.80095e-08C7.25587 -2.50484e-05 8.39658 0.334018 9.37751 0.962497C10.3584 1.59098 11.1384 2.48751 11.6249 3.54573C12.1113 4.60395 12.2839 5.77944 12.122 6.93273C11.9602 8.08602 11.4708 9.1687 10.7118 10.0523L16 15.3379L15.3376 16L10.0484 10.7135C9.30249 11.3511 8.41343 11.799 7.45696 12.0192C6.5005 12.2393 5.50496 12.2252 4.55516 11.9779C3.60535 11.7306 2.7294 11.2576 2.00192 10.599C1.27444 9.94047 0.716974 9.11595 0.377009 8.19566C0.0370426 7.27538 -0.0753542 6.2866 0.0493907 5.31355C0.174136 4.34049 0.532326 3.41199 1.09346 2.60711C1.65459 1.80223 2.40203 1.14483 3.27213 0.690889C4.14223 0.23695 5.10921 -7.54365e-05 6.09071 1.80095e-08ZM6.09071 0.936494C4.72398 0.936494 3.41322 1.47916 2.44679 2.4451C1.48036 3.41105 0.93743 4.72116 0.93743 6.08721C0.93743 7.45327 1.48036 8.76337 2.44679 9.72932C3.41322 10.6953 4.72398 11.2379 6.09071 11.2379C7.45744 11.2379 8.7682 10.6953 9.73463 9.72932C10.7011 8.76337 11.244 7.45327 11.244 6.08721C11.244 4.72116 10.7011 3.41105 9.73463 2.4451C8.7682 1.47916 7.45744 0.936494 6.09071 0.936494Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+      <section class="catalog-section">
+        <div class="catalog__inner container">
+          <div class="catalog-content">
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Бульдозера</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Автогрейдеры</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С бульдозерным отвалом</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Асфальтоукладчики</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Колесные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Тракторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Тракторы-экскаваторы</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Траншеекопатели</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С щеткой</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Бары</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Бульдозера</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Автогрейдеры</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С бульдозерным отвалом</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="catalog-content">
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Бульдозера</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Автогрейдеры</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С бульдозерным отвалом</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Асфальтоукладчики</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Колесные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Тракторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Тракторы-экскаваторы</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Траншеекопатели</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С щеткой</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Бары</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Бульдозера</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Автогрейдеры</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С бульдозерным отвалом</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="catalog-content">
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Бульдозера</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Автогрейдеры</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С бульдозерным отвалом</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Асфальтоукладчики</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Колесные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Тракторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Тракторы-экскаваторы</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Траншеекопатели</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С щеткой</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Бары</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Бульдозера</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Автогрейдеры</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С бульдозерным отвалом</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="catalog-content">
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Бульдозера</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Автогрейдеры</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С бульдозерным отвалом</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Асфальтоукладчики</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Колесные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Тракторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Тракторы-экскаваторы</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Траншеекопатели</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С щеткой</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Бары</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>Гусеничные</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Трубоукладчики</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Установки гнб</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Экскаваторы</span></a>
+              <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              </ul>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Бульдозера</span></a>
+            </div>
+            <div class="category">
+              <a href="" class="category-title"><span>Автогрейдеры</span></a>
+              <ul class="category__list">
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С бульдозерным отвалом</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+                <li class="subcategory">
+                  <a href=""><span>С рыхлителем</span></a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <nav class="mobile-navigation">
+      <ul>
+        <li class="home-tab">
+          <a href="./index.html">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 9.14815L10.5 1L20.5 9.14815" />
+              <path d="M3.46289 9.14819V20C3.46289 20.5523 3.91061 21 4.46289 21H16.537C17.0892 21 17.537 20.5523 17.537 20V9.14819" />
+            </svg>
+            Главная
+          </a>
+        </li>
+        <li class="catalog-tab active">
+          <a href="./catalog.html">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 1H20.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5 6H20.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5 16.5557H13.0741H20.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5 11.3704H20.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5 21H8.58201" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Каталог
+          </a>
+        </li>
+        <li class="search-tab">
+          <button id="showSearch">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.09071 1.80095e-08C7.25587 -2.50484e-05 8.39658 0.334018 9.37751 0.962497C10.3584 1.59098 11.1384 2.48751 11.6249 3.54573C12.1113 4.60395 12.2839 5.77944 12.122 6.93273C11.9602 8.08602 11.4708 9.1687 10.7118 10.0523L16 15.3379L15.3376 16L10.0484 10.7135C9.30249 11.3511 8.41343 11.799 7.45696 12.0192C6.5005 12.2393 5.50496 12.2252 4.55516 11.9779C3.60535 11.7306 2.7294 11.2576 2.00192 10.599C1.27444 9.94047 0.716974 9.11595 0.377009 8.19566C0.0370426 7.27538 -0.0753542 6.2866 0.0493907 5.31355C0.174136 4.34049 0.532326 3.41199 1.09346 2.60711C1.65459 1.80223 2.40203 1.14483 3.27213 0.690889C4.14223 0.23695 5.10921 -7.54365e-05 6.09071 1.80095e-08ZM6.09071 0.936494C4.72398 0.936494 3.41322 1.47916 2.44679 2.4451C1.48036 3.41105 0.93743 4.72116 0.93743 6.08721C0.93743 7.45327 1.48036 8.76337 2.44679 9.72932C3.41322 10.6953 4.72398 11.2379 6.09071 11.2379C7.45744 11.2379 8.7682 10.6953 9.73463 9.72932C10.7011 8.76337 11.244 7.45327 11.244 6.08721C11.244 4.72116 10.7011 3.41105 9.73463 2.4451C8.7682 1.47916 7.45744 0.936494 6.09071 0.936494Z"/>
+            </svg>
+Поиск</button>
+        </li>
+        <li class="contacts-tab">
+          <a href="./contacts.html">
+            <svg width="13" height="20" viewBox="0 0 13 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 20C6.5 20 13 10.7054 13 6.89655C13 3.08769 10.0899 0 6.5 0C2.91015 0 0 3.08769 0 6.89655C0 10.7054 6.5 20 6.5 20ZM6.5 10.3449C8.29492 10.3449 9.75 8.80101 9.75 6.89657C9.75 4.99214 8.29492 3.4483 6.5 3.4483C4.70507 3.4483 3.25 4.99214 3.25 6.89657C3.25 8.80101 4.70507 10.3449 6.5 10.3449Z"/>
+            </svg>
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
