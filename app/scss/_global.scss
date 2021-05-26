@@ -512,7 +512,7 @@ h2, span.h2-style {
 }
 
 // hover эффекты
-.hover-opacity {
+.hover-opacity, .hover-opacity span, .hover-opacity p {
 	@extend %transition;
 	&:hover {
 		opacity: .5;
@@ -521,7 +521,7 @@ h2, span.h2-style {
 		opacity: 1;
 	}
 }
-.hover-yellow {
+.hover-yellow, .hover-yellow span, .hover-yellow p {
 	@extend %transition;
 	&:hover {
 		color: $yellow!important;
@@ -530,7 +530,7 @@ h2, span.h2-style {
 		color: $orange!important;
 	}
 }
-.hover-orange {
+.hover-orange, .hover-orange span, .hover-orange p {
 	@extend %transition;
 	&:hover {
 		color: $orange!important;

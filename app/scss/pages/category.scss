@@ -2,10 +2,6 @@
 
 @import '../vars';
 @import '../media';
-@import '../fonts';
-@import '../reset';
-@import '../libs';
-@import '../global';
 
 .main-banner {
   height: 187px;
@@ -139,6 +135,7 @@
 
 .cloutags ul {
   li {
+    cursor: pointer;
     position: relative;
     display: inline-block;
 	  @extend %transition;
@@ -189,10 +186,205 @@
 
   li {
     min-width: 104px;
+    text-align: center;
     scroll-snap-align: start;
+    @include media-md {
+      min-width: unset;
+    }
   }
 
   @include media-md {
     display: block;
+  }
+}
+
+// секция с карточками товара
+.main-catalog {
+
+}
+
+.main-catalog__items {
+
+}
+
+// карточка товара
+.product-card {
+  border: 1px solid $gray;
+  border-radius: 5px;
+  width: calc(50% - 18px);
+  max-width: 180px;
+  margin: 0 8px 16px 8px;
+  @include media-sm {
+    width: calc(25% - 18px);
+    max-width: 255px;
+  }
+  @include media-xl {
+    width: 255px;
+    max-width: 255px;
+    margin: 0 16px 32px 16px;
+  }
+  // блок фото
+  .product__photo {
+    position: relative;
+    .photo {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%;
+      height: 104px;
+      object-fit: cover;
+      @include media-xl {
+        height: 179px;
+      }
+    }
+    .hit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 4;
+    }
+  }
+  // для переключения фото при наведении
+  .photo-1 {
+    z-index: 1;
+    opacity: 1;
+    @extend %transition;
+  }
+  .photo-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    @extend %transition;
+  }
+  .photo-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    @extend %transition;
+  }
+  .hover-block {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 5;
+  }
+  .hover-block.w50 {
+    width: 50%;
+    &.showPhoto1 {
+      left: 0;
+    }
+    &.showPhoto2 {
+      left: 50%;
+    }
+  }
+  .hover-block.w33 {
+    width: 33.333%;
+    &.showPhoto1 {
+      left: 0;
+    }
+    &.showPhoto2 {
+      left: 33.333%;
+    }
+    &.showPhoto3 {
+      left: 66.666%;
+    }
+  }
+  // пагинация под фото
+  .photo-pagination {
+    display: none;
+    .pagin {
+      div {
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        background: $light-gray;
+        border-radius: 25px;
+      }
+      &.active div {
+        background: $yellow;
+      }
+    }
+    @include media-xl {
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+  // заголовок
+  .product__title span {
+    box-sizing: content-box;
+    max-height: 68px;
+    overflow: hidden;
+    padding: 24px 10px 8px;
+    display: block;
+    @extend %bebas-neue-font;
+    font-size: 16px;
+    line-height: 16px;
+    color: $gray;
+    @include media-xl {
+      max-height: 40px;
+      padding: 24px 16px 16px 16px;
+      font-size: 20px;
+      line-height: 20px;  
+    }
+  }
+  // характеристики
+  .product__info {
+    padding: 0 16px 14px 16px;
+  }
+  .product__parameter span {
+    @extend %text-font;
+    color: $gray;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+  // блок цена
+  .product__price {
+    max-height: 69px;
+    overflow: hidden;
+    padding: 8px 10px 4px;
+    background: $gray;
+    @include media-xl {
+      padding: 13px 16px;
+      .price-hour {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+      .price-day {
+        display: inline-block;
+        margin-bottom: 0;
+        float: right;
+      }
+    }
+    span {
+      display: block;
+      @extend %text-font;
+      color: white;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 4px;
+    }
+  }
+  // кнопка арендовать
+  .product__btn {
+    padding: 12px 10px 10px;
+    display: flex;
+    justify-content: center;
+    @include media-xl {
+      padding: 16px;
+    }
+    button {
+      padding: 6.5px 8.5px;
+      width: 133px;
+      height: 33px;
+    }
+    @include media-md {
+      justify-content: flex-end;
+    }
   }
 }

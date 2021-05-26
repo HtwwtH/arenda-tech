@@ -2,9 +2,7 @@
 
 @import 'vars';
 @import 'media';
-@import 'fonts';
 @import 'reset';
-@import 'libs';
 @import 'global';
 
 // header общее
@@ -561,7 +559,6 @@
 .catalog-section {
   .catalog__inner {
     display: flex;
-    // flex-wrap: wrap;
   }
 
   .catalog-content {

@@ -80,4 +80,76 @@ $(document).ready(function () {
       $sortingBtn.find('.close').removeClass('d-none');
     }
   })
+
+  // change photo hover effect on product card, for pc
+  function findParent(elem) {
+    if (elem.attr('class').indexOf('hover-block') != -1) {
+      return elem.parent('.product__photo').parent('a').parent('.product-card');
+    }
+    else if (elem.attr('class').indexOf('pagin') != -1) {
+      return elem.parent('.photo-pagination').parent('.product-card');
+    }
+  }
+
+  $showPhoto1 = $(".showPhoto1");
+  $showPhoto2 = $(".showPhoto2");
+  $showPhoto3 = $(".showPhoto3");
+  var parent;
+
+  $showPhoto1.hover(function () {
+    parent = findParent($(this));
+    parent.find('.photo-1').css({ opacity: 1 });
+    parent.find('.photo-2').css({ opacity: 0 });
+  }, function () { })
+
+  $showPhoto2.hover(function () {
+    parent = findParent($(this));
+    parent.find('.photo-1').css({ opacity: 0 });
+    parent.find('.photo-2').css({ opacity: 1 });
+    parent.find('.pagin-1').removeClass('active');
+    parent.find('.pagin-2').addClass('active');
+  }
+    , function (e) {
+      if ((e.relatedTarget).className.indexOf("showPhoto1") != -1) {
+        parent.find('.photo-1').css({ opacity: 1 });
+        parent.find('.photo-2').css({ opacity: 0 });
+        parent.find('.pagin-1').addClass('active');
+        parent.find('.pagin-2').removeClass('active');
+      }
+      else if ((e.relatedTarget).className.indexOf("showPhoto3") != -1) {
+        parent.find('.photo-2').css({ opacity: 0 });
+        parent.find('.photo-3').css({ opacity: 1 });
+        parent.find('.pagin-2').removeClass('active');
+        parent.find('.pagin-3').addClass('active');
+      }
+      else {
+        parent.find('.photo-1').css({ opacity: 1 });
+        parent.find('.photo-2').css({ opacity: 0 });
+        parent.find('.pagin-1').addClass('active');
+        parent.find('.pagin-2').removeClass('active');
+      }
+    }
+  )
+  $showPhoto3.hover(function () {
+    parent = findParent($(this));
+    parent.find('.photo-1').css({ opacity: 0 });
+    parent.find('.photo-2').css({ opacity: 0 });
+    parent.find('.photo-3').css({ opacity: 1 });
+    parent.find('.pagin-1').removeClass('active');
+    parent.find('.pagin-2').removeClass('active');
+    parent.find('.pagin-3').addClass('active');
+  }, function (e) {
+    if ((e.relatedTarget).className.indexOf("showPhoto2") != -1) {
+      parent.find('.photo-2').css({ opacity: 1 });
+      parent.find('.photo-3').css({ opacity: 0 });
+      parent.find('.pagin-2').addClass('active');
+      parent.find('.pagin-3').removeClass('active');
+    }
+    else {
+      parent.find('.photo-1').css({ opacity: 1 });
+      parent.find('.photo-3').css({ opacity: 0 });
+      parent.find('.pagin-1').addClass('active');
+      parent.find('.pagin-3').removeClass('active');
+    }
+  })
 })
