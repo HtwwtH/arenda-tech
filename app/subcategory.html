@@ -508,8 +508,7 @@
   <div class="wrapper">
     <main class="main">
       
-      <!-- banner -->
-      <section class="main-banner banner d-flex flex-col align-center justify-end">
+
         <!-- <div class="breadcrumbs container">
           <ol itemscope itemtype="https://schema.org/BreadcrumbList">
             <li itemprop="itemListElement" itemscope
@@ -526,55 +525,33 @@
             </li>
           </ol>
         </div> -->
-        <div class="breadcrumbs container" itemscope="" itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">
+        <div class="breadcrumbs container pt-s pb-l" itemscope="" itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">
           <span class="item" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
             <a href="./index.html" rel="nofollow" itemprop="item" title="Главная" href="//prodengiblog.ru">
                 <span itemprop="name">Название компании</span>
                 <meta itemprop="position" content="1">
             </a>
           </span>
+          <span class="item" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+            <a href="./category.html" rel="nofollow" itemprop="item" title="Главная" href="//prodengiblog.ru">
+                <span itemprop="name">Аренда спецтехники</span>
+                <meta itemprop="position" content="2">
+            </a>
+          </span>
           <span class="item active" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
               <a itemprop="item" title="Оптимизация" href="//prodengiblog.ru/optimizaciya">
-                  <span itemprop="name">Аренда землеройной спецтехники</span>
-                  <meta itemprop="position" content="2">
+                  <span itemprop="name">Аренда экскаватора</span>
+                  <meta itemprop="position" content="3">
               </a>
           </span>
         </div>
+
         <div class="container">
-          <div class="text-block row align-center">
-            <div class="col-12">
-              <h1 class="mb-m mb-xl-s mt-xl-4xl">Аренда землеройной спецтехники</h1>
-              <div class="col-12 mb-l d-none d-xl-flex">
-                <p class="mr-m col-6">Если вам необходимо современное оборудование для работы с грунтом, выгодным решением может стать аренда землеройной техники в компании «Красроуд». С машинами этого предприятия вам будут доступны самые разнообразные и сложные земляные работы. Вы сможете оказывать дорогостоящие услуги и тем самым существенно расширите возможности своей организации.
-                </p>
-              </div>
-              
-            </div>
-            <div class="row align-center">
-              <button class="orange-btn col-12 col-xl-3 col-xxl-2 mb-xl-2xl mb-xxl-4xl d-none d-xl-flex"><span>Получить консультацию</span></button>
-            </div>
-          </div>
+          <h1 class="mb-m mb-xl-s color-gray">Аренда Экскаватора</h1>
         </div>
-        <img src="./images/category/bg_first_screen_arenda.jpg" alt="Аренда спецтехники в Красноярске" title="Аренда спецтехники в Красноярске">
-      </section>
 
-      <div class="underlined-section d-none d-xl-block" style="height: 96px;"></div>
-
-      <section  class="company-info-mobile underlined-section d-xl-none pb-xl pt-xs pt-xsm-s pt-md-xl">
-        <div class="container row">
-          <p class="mb-xs">Наша компания действует на рынке аренды спецтехники (аренда автокрана, аренда экскаватора, манипулятора) на протяжении 10 лет. За это время в фирме сформировался значительный парк техники, сложилась собственная материально-техническая и ремонтная инфраструктура, был приобретён большой опыт в области строительной техники и грузоперевозок.
-          </p>
-          <p class="mb-m">Компания “Красроуд" оказывает услуги по аренде спецтехники (аренда крана, аренда автовышки, аренда самосвалов) как крупнейшим строительным и производственным компаниям, так и представителям малого бизнеса, частным заказчикам.
-  Также мы предлагаем услуги аренды следующей строительной техники: вышка, компрессор, бетононасос, автогрейдер, бульдозер, фронтальный погрузчик и др. </p>
-          <button class="orange-btn col-12 col-xsm-7"><span>Получить консультацию</span></button>
-        </div>
-      </section>
-
-      <!-- category -->
-      <section class="category-section pt-s pb-l pb-xl-xl">
-        <div class="container">
-        <a class="hover-yellow" href="./category.html"><h2 class="mb-m mb-xl-l hover-yellow">Землеройная спецтехника</h2></a>
-        </div>
+      <!-- subcategory -->
+      <section class="category-section subcategory pb-l pb-xl-2xs d-md-block">
         <div class="category-section__items justify-between-container d-flex flex-wrap">
           <a href="#" class="category-section__item">
             <div class="category-section__img mb-2xs">
@@ -652,7 +629,11 @@
       <!-- sorting section -->
       <div class="sorting container-big">
         <div class="row">
-          <button id="showSorting" class="show-sorting pl-xs">По возрастанию цены
+          <button id="showFilters" class="show-filters col-5">Фильтры
+            <img class="show ml-s mr-s" src="./images/icons/dropdown-white.svg" alt="">
+            <img class="close ml-s mr-s d-none" src="./images/icons/icon_close-white.svg" alt="">
+          </button>
+          <button id="showSorting" class="show-sorting pl-2xs">По возрастанию цены
             <img class="show ml-2xs" src="./images/icons/dropdown.svg" alt="">
             <img class="close ml-2xs d-none" src="./images/icons/icon_close.svg" alt="">
           </button>

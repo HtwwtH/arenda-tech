@@ -311,8 +311,6 @@ h2, span.h2-style {
 // elements
 // breadcrumbs
 .breadcrumbs {
-	position: absolute;
-	top: 24px;
 	ol {
 		list-style: none;
 		display: flex;
@@ -352,7 +350,7 @@ h2, span.h2-style {
 		&:after {
 			content: '/';
 			font-size: 10px;
-			color: $light-gray;
+			color: $black;
 			margin-left: 1px;
 			margin-right: 3px;
 		}
@@ -370,11 +368,23 @@ h2, span.h2-style {
 	span a {
 		font-size: 12px;
 		line-height: 15px;
-		color: $light-gray;
+		color: $black;
 	}
 	span.active a {
 		cursor: default;
 		opacity: .5;
+	}
+}
+.banner .breadcrumbs {
+	position: absolute;
+	top: 24px;
+	span a {
+		color: $light-gray;
+	}
+	.item:not(:last-child) {
+		&:after {
+			color: $light-gray;
+		}
 	}
 }
 // подчеркнутые снизу секции
@@ -471,7 +481,7 @@ h2, span.h2-style {
 }
 
 // разделы с категориями
-.category-section {
+
 	.category-section__items a:hover {
 		.blackout {
 			opacity: 0;
@@ -489,13 +499,18 @@ h2, span.h2-style {
 	}
 	.category-section__item {
 		width: calc(50% - 16px);
+		margin: 0 8px 16px 8px;
 		@include media-xsm {
 			width: 136px;
 		}
-		margin: 0 8px 16px 8px;
 		@include media-xl {
 			width: 160px;
 			margin: 0 16px 32px 16px;
+		}
+	}
+	.category-section.subcategory .category-section__item {
+		@include media-xl {
+			margin: 0 16px 16px 16px;
 		}
 	}
 	.category-section__img {
@@ -504,6 +519,9 @@ h2, span.h2-style {
 		width: 100%;
 		height: 105px;
 		overflow:hidden;
+	}
+	.category-section.subcategory .category-section__img {
+		height: 72px;
 	}
 	.category-section__img img {
 		@extend %transition;
@@ -535,7 +553,11 @@ h2, span.h2-style {
 			line-height: 20px;
 		}
 	}
-}
+	.category-section.subcategory .category-section__item span {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
 .category-section:last-child {
 	margin-bottom: 64px;
 	@include media-xl {
@@ -759,6 +781,9 @@ h2, span.h2-style {
 // inline font styles 
 .color-yellow {
 	color: $yellow!important;
+}
+.color-gray {
+	color: $gray!important;
 }
 .color-white {
 	color: white!important;
