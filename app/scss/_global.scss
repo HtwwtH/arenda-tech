@@ -234,6 +234,10 @@ h2, span.h2-style {
 	line-height: 20px;
 	text-align: center;
 	z-index: 1;
+	@include media-xsm {
+		font-size: 16px;
+		line-height: 20px;
+	}
 	@include media-xl {
 		max-width: 256px!important;
 	}
@@ -276,6 +280,34 @@ h2, span.h2-style {
 	}
 }
 
+.gray-btn {
+	@extend %transition;
+	padding: 13px 24px;
+	background: $gray;
+	box-shadow: 4px 4px 10px rgba(33, 33, 33, 0.25);
+	border: 1px solid $gray;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	@include media-xl {
+		max-width: 256px!important;
+	}
+	span {
+		color: $light-gray;
+		margin: 0 auto;
+	}
+	&:hover {
+		background: white;
+		span {
+			color: $gray;
+		}
+	}
+	&:active {
+		background: $orange;
+	}
+}
+
 // elements
 // breadcrumbs
 .breadcrumbs {
@@ -285,6 +317,7 @@ h2, span.h2-style {
 		list-style: none;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		padding-left: 0;
 	}
 	li:not(:last-child) {
@@ -311,6 +344,35 @@ h2, span.h2-style {
 		color: $light-gray;
 	}
 	li.active a {
+		cursor: default;
+		opacity: .5;
+	}
+
+	.item:not(:last-child) {
+		&:after {
+			content: '/';
+			font-size: 10px;
+			color: $light-gray;
+			margin-left: 1px;
+			margin-right: 3px;
+		}
+		&:hover a {
+			color: $orange;
+			text-decoration: underline;
+		}
+		&:active a {
+			text-decoration: none;
+			color: $gray;
+			opacity: 0.5;
+		}
+	}
+
+	span a {
+		font-size: 12px;
+		line-height: 15px;
+		color: $light-gray;
+	}
+	span.active a {
 		cursor: default;
 		opacity: .5;
 	}
@@ -1069,6 +1131,9 @@ h2, span.h2-style {
 		margin-bottom: $xl4;
 	}
 }
+.mr-auto {
+	margin-right: auto;
+}
 .mr-0 {
 	margin-right: 0;
 }
@@ -1794,6 +1859,9 @@ h2, span.h2-style {
 	@include media-xxl {
 		margin-top: $xl4;
 	}
+}
+.ml-auto {
+	margin-left: auto;
 }
 .ml-0 {
 	margin-left: 0;

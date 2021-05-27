@@ -510,7 +510,7 @@
       
       <!-- banner -->
       <section class="main-banner banner d-flex flex-col align-center justify-end">
-        <div class="breadcrumbs container">
+        <!-- <div class="breadcrumbs container">
           <ol itemscope itemtype="https://schema.org/BreadcrumbList">
             <li itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
@@ -525,6 +525,20 @@
               <meta itemprop="position" content="2" />
             </li>
           </ol>
+        </div> -->
+        <div class="breadcrumbs container" itemscope="" itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">
+          <span class="item" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+            <a href="./index.html" rel="nofollow" itemprop="item" title="Главная" href="//prodengiblog.ru">
+                <span itemprop="name">Название компании</span>
+                <meta itemprop="position" content="1">
+            </a>
+          </span>
+          <span class="item active" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+              <a itemprop="item" title="Оптимизация" href="//prodengiblog.ru/optimizaciya">
+                  <span itemprop="name">Аренда землеройной спецтехники</span>
+                  <meta itemprop="position" content="2">
+              </a>
+          </span>
         </div>
         <div class="container">
           <div class="text-block row align-center">
@@ -547,12 +561,12 @@
       <div class="underlined-section d-none d-xl-block" style="height: 96px;"></div>
 
       <section  class="company-info-mobile underlined-section d-xl-none pb-xl pt-xs pt-xsm-s pt-md-xl">
-        <div class="container">
+        <div class="container row">
           <p class="mb-xs">Наша компания действует на рынке аренды спецтехники (аренда автокрана, аренда экскаватора, манипулятора) на протяжении 10 лет. За это время в фирме сформировался значительный парк техники, сложилась собственная материально-техническая и ремонтная инфраструктура, был приобретён большой опыт в области строительной техники и грузоперевозок.
           </p>
           <p class="mb-m">Компания “Красроуд" оказывает услуги по аренде спецтехники (аренда крана, аренда автовышки, аренда самосвалов) как крупнейшим строительным и производственным компаниям, так и представителям малого бизнеса, частным заказчикам.
   Также мы предлагаем услуги аренды следующей строительной техники: вышка, компрессор, бетононасос, автогрейдер, бульдозер, фронтальный погрузчик и др. </p>
-          <button class="orange-btn col-12"><span>Получить консультацию</span></button>
+          <button class="orange-btn col-12 col-xsm-7"><span>Получить консультацию</span></button>
         </div>
       </section>
 
@@ -848,7 +862,10 @@
               <span class="price-hour">от 3500 ₽/час</span>
               <span class="price-day">от 28 000 ₽/смена</span>
             </div>
-            <div class="product__btn"><button class="button rent-btn orange-btn"><span>Арендовать</span></button></div>
+            <div class="product__btn">
+              <a href="#" class="compare d-xl-block">Сравнить</a>
+              <button class="button rent-btn orange-btn"><span>Узнать цену</span></button>
+            </div>
           </div>
 
           <!-- product card with 2 photo -->
@@ -887,7 +904,10 @@
               <span class="price-hour">от 3500 ₽/час</span>
               <span class="price-day">от 28 000 ₽/смена</span>
             </div>
-            <div class="product__btn"><button class="button rent-btn orange-btn"><span>Арендовать</span></button></div>
+            <div class="product__btn">
+              <a href="#" class="compare d-xl-block">Сравнить</a>
+              <button class="button rent-btn orange-btn"><span>Узнать цену</span></button>
+            </div>
           </div>
 
           <!-- product card with 3 photo -->
@@ -929,11 +949,35 @@
               <span class="price-hour">от 3500 ₽/час</span>
               <span class="price-day">от 28 000 ₽/смена</span>
             </div>
-            <div class="product__btn"><button class="button rent-btn orange-btn"><span>Арендовать</span></button></div>
+            <div class="product__btn">
+              <a href="#" class="compare d-xl-block">Сравнить</a>
+              <button class="button rent-btn orange-btn"><span>Узнать цену</span></button>
+            </div>
           </div>
     
         </div>
       </section>
+
+      <div class="page-pagination-block row align-center container justify-between mb-xl mb-xl-4xl">
+        <div class="page-pagination mb-xs">
+          <a href="#" class="page-prev">
+            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.95215 1.1665L1.04739 5.99984L7.95215 10.8332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#" class="page selected">1</a>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">3</a>
+          <a href="#" class="page">...</a>
+          <a href="#" class="page">16</a>
+          <a href="#" class="page-next">
+            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.04785 1.1665L7.95261 5.99984L1.04785 10.8332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <button class="gray-btn col-12 col-xsm-7 col-sm-4 col-xl-3"><span>Показать ещё</span></button>
+      </div>
 
     </main>
 
