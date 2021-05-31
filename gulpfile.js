@@ -66,6 +66,7 @@ function replaceName(path) {
   console.log('full path: ' + path);
 }
 
+// дополнительные стили отдельных страниц
 function pageStyles() {
   var filename = '';
   return src('app/scss/pages/*.scss')

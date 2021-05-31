@@ -73,12 +73,198 @@ $(document).ready(function () {
       $sorting.slideUp(300);
       $sortingBtn.find('.show').removeClass('d-none');
       $sortingBtn.find('.close').addClass('d-none');
+      if ($("#sortingApplied").is(':visible')) {
+        $("#sortingApplied").hide(200);
+      }
     }
     else {
+      if ($(".filter-mobile").is(':visible')) {
+        $(".filter-mobile").slideUp(300);
+        if ($("#filterApplied").is(':visible')) {
+          $("#filterApplied").hide(200);
+        }
+      }
       $sorting.slideDown(300);
       $sortingBtn.find('.show').addClass('d-none');
       $sortingBtn.find('.close').removeClass('d-none');
     }
+  })
+  // when click radio button in sorting, show this alert, hide after 4s
+  $(".sort_radio").click(function () {
+    $("#sortingApplied").show(200);
+    setTimeout(function () {
+      $("#sortingApplied").hide(200);
+    }, 4000);
+  })
+
+  // класс для хранения информации, сколько фильтров выбрано
+  class CountFilters {
+    constructor() {
+      this.count = 0;
+      this.brands = 0;
+      this.volume = 0;
+      this.tonn = 0;
+    }
+    updateValueHtml() {
+      if ($('#filtersCount').is(':visible') == false) {
+        $('#filtersCount').css("display", "block");
+        $('#filtersCount').text(this.count);
+      }
+      else
+        $('#filtersCount').text(this.count);
+    }
+    addBrands() {
+      if (this.brands == 0) {
+        this.brands++;
+        this.count++;
+        this.updateValueHtml();
+      }
+    }
+    addVolume() {
+      if (this.volume == 0) {
+        this.volume++;
+        this.count++;
+        this.updateValueHtml();
+      }
+    }
+    addTonn() {
+      if (this.tonn == 0) {
+        this.tonn++;
+        this.count++;
+        this.updateValueHtml();
+      }
+    }
+    removeBrands() {
+      this.brands = 0;
+      if (this.count != 0)
+        this.count--;
+      let allRadios = $('input[name="radio"]');
+      let allBrandsRadios = $(".brands-filter").find(allRadios);
+      allBrandsRadios.prop('checked', false);
+    }
+    removeVolume() {
+      this.volume = 0;
+      if (this.count != 0)
+        this.count--;
+      document.querySelector('#input-min-value').value = 0;
+      document.querySelector('#input-max-value').value = 40;
+      filterSlider.noUiSlider.set([0, 40]);
+    }
+    removeTonn() {
+      this.tonn = 0;
+      if (this.count != 0)
+        this.count--;
+      let allRadios = $('input[name="radio"]');
+      let allTonnRadios = $(".tonn-filter").find(allRadios);
+      allTonnRadios.prop('checked', false);
+    }
+    removeCount() {
+      this.count = 0;
+      this.brands = 0;
+      this.volume = 0;
+      this.tonn = 0;
+      $('#filtersCount').text(0);
+      $('#filtersCount').css("display", "none");
+      this.removeBrands();
+      this.removeTonn();
+      this.removeVolume();
+
+    }
+  }
+  let countFilters = new CountFilters(); //инициализация класса
+
+  // show filters on mobile
+  $filterBtn = $('#showFilters');
+  $filters = $('.filter-mobile');
+  $filterBtn.click(function () {
+    if ($filters.is(':visible')) {
+      // закрытие вкладки, сброс всех фильтров
+      countFilters.removeCount();
+      $filters.slideUp(300);
+      $filterBtn.find('.show').removeClass('d-none');
+      $filterBtn.find('.close').addClass('d-none');
+      if ($("#filterApplied").is(':visible')) {
+        $("#filterApplied").hide(200);
+      }
+    }
+    else {
+      if ($(".sort-mobile").is(':visible')) {
+        $(".sort-mobile").slideUp(300);
+        if ($("#sortingApplied").is(':visible')) {
+          $("#sortingApplied").hide(200);
+        }
+      }
+      $filters.slideDown(300);
+      $filterBtn.find('.show').addClass('d-none');
+      $filterBtn.find('.close').removeClass('d-none');
+    }
+  })
+
+  // when click radio button, swipe slider or input value in filters, show this alert, hide after 4s` 
+  function showFilterAlert() {
+    $("#filterApplied").show(200);
+    setTimeout(function () {
+      $("#filterApplied").hide(200);
+    }, 4000);
+  }
+
+  // все радиокнопки
+  let allRadios = $(".filter_radio");
+  // выбор радиокнопки из формы фильтра брендов
+  let allBrandsRadios = $(".brands-filter").find(allRadios);
+  allBrandsRadios.each(function () {
+    $(this).on("click", function (e) {
+      countFilters.addBrands();
+      showFilterAlert();
+    })
+  })
+  // выбор радиокнопки из формы фильтра тоннажа
+  let allTonnRadios = $(".tonn-filter").find(allRadios);
+  allTonnRadios.each(function () {
+    $(this).on("click", function (e) {
+      countFilters.addTonn();
+      showFilterAlert();
+    })
+  })
+  // действия после взаимодействия с фильтр-слайдером
+  $('#input-min-value').on("input", function () {
+    countFilters.addVolume();
+    showFilterAlert();
+  })
+  $('#input-max-value').on("input", function () {
+    countFilters.addVolume();
+    showFilterAlert();
+  })
+  $('.noUi-handle-lower').on("touchend mouseup", function () {
+    countFilters.addVolume();
+    showFilterAlert();
+  })
+  $('.noUi-handle-upper').on("touchend mouseup", function () {
+    countFilters.addVolume();
+    showFilterAlert();
+  })
+
+  // закрытие каждого из фильтров по отдельности по кнопкам close возле названия фильтра
+  $("#close-brands").click(function () {
+    countFilters.removeBrands();
+    $("#filterApplied").show(200);
+    setTimeout(function () {
+      $("#filterApplied").hide(200);
+    }, 4000);
+  })
+  $("#close-volume").click(function () {
+    countFilters.removeVolume();
+    $("#filterApplied").show(200);
+    setTimeout(function () {
+      $("#filterApplied").hide(200);
+    }, 4000);
+  })
+  $("#close-tonn").click(function () {
+    countFilters.removeTonn();
+    $("#filterApplied").show(200);
+    setTimeout(function () {
+      $("#filterApplied").hide(200);
+    }, 4000);
   })
 
   // change photo hover effect on product card, for pc

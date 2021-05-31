@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Аренда техники</title>
+  <link rel="stylesheet" href="css/nouislider.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/category.min.css">
 </head>
@@ -553,70 +554,70 @@
       <!-- subcategory -->
       <section class="category-section subcategory pb-l pb-xl-2xs d-md-block">
         <div class="category-section__items justify-between-container d-flex flex-wrap">
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы погрузчики</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
             </div>
             <span>Экскаваторы</span>
           </a>
-          <a href="#" class="category-section__item">
+          <a href="./subcategory.html" class="category-section__item">
             <div class="category-section__img mb-2xs">
               <img src="./images/homepage/photo.jpg" alt="">
               <div class="blackout"></div>
@@ -630,6 +631,7 @@
       <div class="sorting container-big">
         <div class="row">
           <button id="showFilters" class="show-filters col-5">Фильтры
+            <span id="filtersCount" class="filters__count">0</span>
             <img class="show ml-s mr-s" src="./images/icons/dropdown-white.svg" alt="">
             <img class="close ml-s mr-s d-none" src="./images/icons/icon_close-white.svg" alt="">
           </button>
@@ -648,23 +650,139 @@
           </div>
         </div>
       </div>
+      <!-- Выпадающее окно фильтр мобильной версии -->
+      <div class="filter-mobile container pt-s pb-s">
+        <div class="filter-mobile__inner">
+          <form class="brands-filter">
+            <div class="row mb-xs">
+              <p>Бренды</p>
+              <img id="close-brands" class="close ml-xs" src="./images/icons/icon_close-white.svg" alt="">
+            </div>
+            
+            <div class="row mb-s">
+              <div class="col-6">
+                <div class="form_radio filter_radio">
+                  <input id="filter-1-radio-1" type="radio" name="radio" value="1">
+                  <label for="filter-1-radio-1">Case</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-1-radio-2" type="radio" name="radio" value="2">
+                  <label for="filter-1-radio-2">Hitachi</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-1-radio-3" type="radio" name="radio" value="3">
+                  <label for="filter-1-radio-3">LiuGong</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-1-radio-4" type="radio" name="radio" value="3">
+                  <label for="filter-1-radio-4">Doosan</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form_radio filter_radio">
+                  <input id="filter-1-radio-5" type="radio" name="radio" value="1">
+                  <label for="filter-1-radio-5">AmphiMaster</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-1-radio-6" type="radio" name="radio" value="2">
+                  <label for="filter-1-radio-6">Waterking</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-1-radio-7" type="radio" name="radio" value="3">
+                  <label for="filter-1-radio-7">МТЗ</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-1-radio-8" type="radio" name="radio" value="3">
+                  <label for="filter-1-radio-8">NewHolland</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          
+          <div class="volume-filter">
+            <div class="row mb-xs">
+              <p>Объем ковша, м3</p>
+              <img id="close-volume" class="close ml-xs" src="./images/icons/icon_close-white.svg" alt="">
+            </div>
+            <div class="filter__content">
+              <div class="filter__input mb-xs">
+                <p>от</p>
+                <input type="number" id="input-min-value" value="0">
+                <p>до</p>
+                <input type="number" id="input-max-value" value="40">
+              </div>
+              <div id="filterSlider" class="custom-slider"></div>
+              <div class="filter__labels d-flex justify-between mt-xs mb-s">
+                <p class="filter__label-min">0</p>
+                <p class="filter__label-max">40</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="tonn-filter">
+            <div class="row mb-xs">
+              <p>Тоннаж крана, м3</p>
+              <img id="close-tonn" class="close ml-xs" src="./images/icons/icon_close-white.svg" alt="">
+            </div>
+            
+            <div class="row mb-s">
+              <div class="col-6">
+                <div class="form_radio filter_radio">
+                  <input id="filter-2-radio-1" type="radio" name="radio" value="1">
+                  <label for="filter-2-radio-1">от 6 до 10 тонн</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-2-radio-2" type="radio" name="radio" value="2">
+                  <label for="filter-2-radio-2">от 11 до 20 тонн</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-2-radio-3" type="radio" name="radio" value="3">
+                  <label for="filter-2-radio-3">от 21 до 30 тонн</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-2-radio-4" type="radio" name="radio" value="3">
+                  <label for="filter-2-radio-4">от 31 до 40 тонн</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form_radio filter_radio">
+                  <input id="filter-2-radio-5" type="radio" name="radio" value="1">
+                  <label for="filter-2-radio-5">от 71 до 100 тонн</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-2-radio-6" type="radio" name="radio" value="2">
+                  <label for="filter-2-radio-6">от 101 до 200 тонн</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-2-radio-7" type="radio" name="radio" value="3">
+                  <label for="filter-2-radio-7">от 201 до 300 тонн</label>
+                </div>
+                <div class="form_radio filter_radio">
+                  <input id="filter-2-radio-8" type="radio" name="radio" value="3">
+                  <label for="filter-2-radio-8">NewHolland</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
       <!-- Выпадающее окно сортировка мобильной версии -->
       <div class="sort-mobile container pt-s pb-s">
         <form class="sort-mobile__inner">
           <p class="mb-xs">Сортировка</p>
-          <div class="form_radio">
-            <input id="radio-1" type="radio" name="radio" value="1" checked>
-            <label for="radio-1">По возрастанию цены</label>
+          <div class="form_radio sort_radio">
+            <input id="sortradio-1" type="radio" name="radio" value="1" checked>
+            <label for="sortradio-1">По возрастанию цены</label>
           </div>
           
-          <div class="form_radio">
-            <input id="radio-2" type="radio" name="radio" value="2">
-            <label for="radio-2">По убыванию цены</label>
+          <div class="form_radio sort_radio">
+            <input id="sortradio-2" type="radio" name="radio" value="2">
+            <label for="sortradio-2">По убыванию цены</label>
           </div>
           
-          <div class="form_radio">
-            <input id="radio-3" type="radio" name="radio" value="3">
-            <label for="radio-3">По популярности</label>
+          <div class="form_radio sort_radio">
+            <input id="sortradio-3" type="radio" name="radio" value="3">
+            <label for="sortradio-3">По популярности</label>
           </div>
         </form>
       </div>
@@ -964,6 +1082,10 @@
 
     </main>
 
+    <!-- Специфичные для страниц категорий блоки: оповещения у фильтров, сортировки -->
+    <div id="sortingApplied" class="action-applied"><span>Сортировка применена!</span></div>
+    <div id="filterApplied" class="action-applied"><span>Фильтр применен!<br>Найдено 10 000 единиц техники<br></span></div>
+
     <!-- footer -->
     <footer class="footer">
       <div class="footer__top">
@@ -1026,14 +1148,14 @@
               </div>
               <div class="info-content">
                 <ul>
-                  <li><a href="#">Землеройная техника</a></li>
-                  <li><a href="#">Дорожно-ремонтная техника</a></li>
-                  <li><a href="#">Строительная техника</a></li>
-                  <li><a href="#">Техника для высотных работ</a></li>
-                  <li><a href="#">Погрузочаня техника</a></li>
-                  <li><a href="#">Техника для перевозок</a></li>
-                  <li><a href="#">Коммунальная техника</a></li>
-                  <li><a href="#">Сельскохозяйственная техника</a></li>
+                  <li><a href="./category.html">Землеройная техника</a></li>
+                  <li><a href="./category.html">Дорожно-ремонтная техника</a></li>
+                  <li><a href="./category.html">Строительная техника</a></li>
+                  <li><a href="./category.html">Техника для высотных работ</a></li>
+                  <li><a href="./category.html">Погрузочаня техника</a></li>
+                  <li><a href="./category.html">Техника для перевозок</a></li>
+                  <li><a href="./category.html">Коммунальная техника</a></li>
+                  <li><a href="./category.html">Сельскохозяйственная техника</a></li>
                 </ul>
               </div>
             </div>
@@ -1043,42 +1165,42 @@
               </div>
               <div class="info-content">
                 <ul>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
-                  <li><a href="#">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
                 </ul>
               </div>
             </div>
@@ -1164,6 +1286,63 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script>
+    var filterSlider = document.getElementById('filterSlider');
+
+    noUiSlider.create(filterSlider, {
+        start: [0, 40],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 40
+        }
+    });
+
+    let slider = document.querySelector('.filter__content');
+    let min = parseFloat(slider.querySelector(".filter__label-min").textContent);
+    let max = parseFloat(slider.querySelector(".filter__label-max").textContent);
+    let minVal = slider.querySelector('#input-min-value');
+    let maxVal = slider.querySelector('#input-max-value');
+
+    filterSlider.noUiSlider.on('update', function (values, handle) {
+
+      let value = values[handle];
+
+      if (handle) {
+        if (value < max)
+          maxVal.value = Math.round(value);
+      } else {
+        if (value > min)
+          minVal.value = Math.round(value);
+      }
+    });
+
+    minVal.addEventListener('input', function (event) {
+      if (this.value < min) {
+        minVal.value = this.value;
+        filterSlider.noUiSlider.set([min, null]);
+      }
+      else {
+        filterSlider.noUiSlider.set([this.value, null]);
+      }
+
+    });
+
+    maxVal.addEventListener('input', function (event) {
+      if (this.value > max) {
+        maxVal.value = this.value;
+        filterSlider.noUiSlider.set([null, max]);
+        (filterSlider.closest(".ocfilter-option").querySelector('.show-filtered__button')).remove();
+      }
+      else if (this.value < min) {
+        maxVal.value = this.value;
+        filterSlider.noUiSlider.set([null, max]);
+      }
+      else
+        filterSlider.noUiSlider.set([null, this.value]);
+    });
+  </script>
 </body>
 
 </html>
