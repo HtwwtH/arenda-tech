@@ -78,8 +78,11 @@ $(document).ready(function () {
       }
     }
     else {
+      // если в этот момент открыта другая вкладка (фильтры), скрыть ее
       if ($(".filter-mobile").is(':visible')) {
         $(".filter-mobile").slideUp(300);
+        $("#showFilters").find('.close').addClass('d-none');
+        $("#showFilters").find('.show').removeClass('d-none');
         if ($("#filterApplied").is(':visible')) {
           $("#filterApplied").hide(200);
         }
@@ -188,8 +191,11 @@ $(document).ready(function () {
       }
     }
     else {
+      // если открыта в этот момент другая вкладка (сортировка), скрыть ее
       if ($(".sort-mobile").is(':visible')) {
         $(".sort-mobile").slideUp(300);
+        $("#showSorting").find('.show').removeClass('d-none');
+        $("#showSorting").find('.close').addClass('d-none');
         if ($("#sortingApplied").is(':visible')) {
           $("#sortingApplied").hide(200);
         }

@@ -185,7 +185,8 @@
     border-radius: none;
     border: 1px solid white;
     width: calc(100% - 16px);
-    margin: 0 auto 8px;
+    max-width: 272px;
+    margin: 0 0 8px 8px;
   }
   .noUi-base {
     width: calc(100% + 8px);
@@ -200,6 +201,9 @@
     &:after, &:before {
       display: none;
     }
+  }
+  .filter__labels {
+    max-width: 300px;
   }
 
 // облака тегов
