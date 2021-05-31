@@ -586,15 +586,20 @@
   }
 }
 
-.action-applied {
+.action-alert {
   display: none;
   position: fixed;
   bottom: 56px;
   z-index: 25;
   width: 100%;
-  background: $green;
   padding: 8px 16px;
   color: white;
   font-size: 16px;
   line-height: 20px;  
+  &.accepted {
+    background: $green;
+  }
+  &.declined {
+    background: $red;
+  }
 }
