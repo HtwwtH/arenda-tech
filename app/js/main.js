@@ -141,6 +141,7 @@ $(document).ready(function () {
       this.brands = 0;
       if (this.count != 0)
         this.count--;
+      $('#filtersCount').text(this.count);
       let allRadios = $('input[name="radio"]');
       let allBrandsRadios = $(".brands-filter").find(allRadios);
       allBrandsRadios.prop('checked', false);
@@ -149,6 +150,7 @@ $(document).ready(function () {
       this.volume = 0;
       if (this.count != 0)
         this.count--;
+      $('#filtersCount').text(this.count);
       document.querySelector('#input-min-value').value = 0;
       document.querySelector('#input-max-value').value = 40;
       filterSlider.noUiSlider.set([0, 40]);
@@ -157,6 +159,7 @@ $(document).ready(function () {
       this.tonn = 0;
       if (this.count != 0)
         this.count--;
+      $('#filtersCount').text(this.count);
       let allRadios = $('input[name="radio"]');
       let allTonnRadios = $(".tonn-filter").find(allRadios);
       allTonnRadios.prop('checked', false);
