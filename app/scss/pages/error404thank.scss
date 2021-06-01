@@ -1,0 +1,47 @@
+@import '../vars';
+@import '../media';
+
+.error404 {
+  @include media-xl {
+    padding-bottom: 199px;
+  }
+  @include media-xxl {
+    padding-bottom: 265px;
+  }
+}
+.error404__text, .thank__text {
+  @include media-xl {
+    max-width: 448px;
+  }
+  @include media-xxl {
+    max-width: unset;
+  }
+}
+.error404__image {
+  right: 0;
+  width: 60%;
+  @include media-xl {
+    top: 56px;
+    min-width: 928px;
+  }
+  @include media-xxl {
+    top: 0;
+    min-width: 1139px;
+  }
+}
+.thank__image {
+  width: 50%;
+  max-width: 728px;
+  height: 128px;
+  margin: 0 auto;
+  object-fit: contain;
+  @include media-xsm {
+    margin-left: 0;
+  }
+  @include media-sm {
+    height: unset;
+  }
+}
+.error404__button, .thank__button {
+  max-width: 288px;
+}

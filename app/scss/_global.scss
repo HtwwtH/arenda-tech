@@ -223,6 +223,7 @@ h2, span.h2-style {
 }
 
 .orange-btn {
+	display: flex;
 	position: relative;
 	@extend %transition;
 	padding: 14px 24px;
@@ -629,6 +630,14 @@ h2, span.h2-style {
 	display: block;
 }
 
+// position
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+
 // displaying
 .d-none {
 	display: none;
@@ -781,6 +790,9 @@ h2, span.h2-style {
 // inline font styles 
 .color-yellow {
 	color: $yellow!important;
+}
+.color-orange {
+	color: $orange!important;
 }
 .color-gray {
 	color: $gray!important;
