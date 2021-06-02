@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аренда техники</title>
+  <link rel="stylesheet" href="css/baguetteBox.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/category.min.css">
+  <link rel="stylesheet" href="css/product.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="header__inner container">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img class="logo-pc" src="./images/logo.png" alt="logo">
+            <img class="logo-mobile" src="./images/logo-mobile.png" alt="logo">
+          </a>
+        </div>
+        <a href="mailto:e-mail@mail.ru" class="link link-mail">e-mail@mail.ru</a>
+        <a href="tel:+7 (800) 999-00-00" class="link link-phone">+7 (800) 999-00-00</a>
+        <div class="header__search">
+          <div id="search-content" class="search">
+            <input type="text" name="search" value="" placeholder="Введите запрос">
+            <button type="search-submit" id="search-submit">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.09071 1.80095e-08C7.25587 -2.50484e-05 8.39658 0.334018 9.37751 0.962497C10.3584 1.59098 11.1384 2.48751 11.6249 3.54573C12.1113 4.60395 12.2839 5.77944 12.122 6.93273C11.9602 8.08602 11.4708 9.1687 10.7118 10.0523L16 15.3379L15.3376 16L10.0484 10.7135C9.30249 11.3511 8.41343 11.799 7.45696 12.0192C6.5005 12.2393 5.50496 12.2252 4.55516 11.9779C3.60535 11.7306 2.7294 11.2576 2.00192 10.599C1.27444 9.94047 0.716974 9.11595 0.377009 8.19566C0.0370426 7.27538 -0.0753542 6.2866 0.0493907 5.31355C0.174136 4.34049 0.532326 3.41199 1.09346 2.60711C1.65459 1.80223 2.40203 1.14483 3.27213 0.690889C4.14223 0.23695 5.10921 -7.54365e-05 6.09071 1.80095e-08ZM6.09071 0.936494C4.72398 0.936494 3.41322 1.47916 2.44679 2.4451C1.48036 3.41105 0.93743 4.72116 0.93743 6.08721C0.93743 7.45327 1.48036 8.76337 2.44679 9.72932C3.41322 10.6953 4.72398 11.2379 6.09071 11.2379C7.45744 11.2379 8.7682 10.6953 9.73463 9.72932C10.7011 8.76337 11.244 7.45327 11.244 6.08721C11.244 4.72116 10.7011 3.41105 9.73463 2.4451C8.7682 1.47916 7.45744 0.936494 6.09071 0.936494Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__bot">
+      <div class="header__inner container">
+        <nav>
+          <ul>
+            <li id="showCatalog" class="dropdown hover-opacity">
+              <a href="./rent.html">Аренда спецтехники</a>
+            </li>
+            <li class="hover-opacity">
+              <a href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="light-gray-btn d-xxl-block">Получить консультацию</button>
+      </div>
+    </div>
+
+    <div class="header__catalog">
+      <div class="catalog__inner container">
+        <div class="catalog-content">
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Бульдозера</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Автогрейдеры</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>С рыхлителем</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>С бульдозерным отвалом</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>С рыхлителем</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>С рыхлителем</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Трубоукладчики</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Установки гнб</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Асфальтоукладчики</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Колесные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Тракторы</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Тракторы-экскаваторы</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Траншеекопатели</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>С щеткой</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Бары</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+              <li class="subcategory">
+                <a href=""><span>Гусеничные</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Трубоукладчики</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Установки гнб</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Трубоукладчики</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Установки гнб</span></a>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+          <div class="category">
+            <a href="" class="category-title"><span>Экскаваторы</span></a>
+            <ul class="category__list">
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            <li class="subcategory">
+              <a href=""><span>Гусеничные</span></a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search__block_mobile">
+      <div id="search-content" class="search">
+        <input type="text" name="search" value="" placeholder="Введите запрос">
+        <button type="search-submit" id="search-submit">
+          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.09071 1.80095e-08C7.25587 -2.50484e-05 8.39658 0.334018 9.37751 0.962497C10.3584 1.59098 11.1384 2.48751 11.6249 3.54573C12.1113 4.60395 12.2839 5.77944 12.122 6.93273C11.9602 8.08602 11.4708 9.1687 10.7118 10.0523L16 15.3379L15.3376 16L10.0484 10.7135C9.30249 11.3511 8.41343 11.799 7.45696 12.0192C6.5005 12.2393 5.50496 12.2252 4.55516 11.9779C3.60535 11.7306 2.7294 11.2576 2.00192 10.599C1.27444 9.94047 0.716974 9.11595 0.377009 8.19566C0.0370426 7.27538 -0.0753542 6.2866 0.0493907 5.31355C0.174136 4.34049 0.532326 3.41199 1.09346 2.60711C1.65459 1.80223 2.40203 1.14483 3.27213 0.690889C4.14223 0.23695 5.10921 -7.54365e-05 6.09071 1.80095e-08ZM6.09071 0.936494C4.72398 0.936494 3.41322 1.47916 2.44679 2.4451C1.48036 3.41105 0.93743 4.72116 0.93743 6.08721C0.93743 7.45327 1.48036 8.76337 2.44679 9.72932C3.41322 10.6953 4.72398 11.2379 6.09071 11.2379C7.45744 11.2379 8.7682 10.6953 9.73463 9.72932C10.7011 8.76337 11.244 7.45327 11.244 6.08721C11.244 4.72116 10.7011 3.41105 9.73463 2.4451C8.7682 1.47916 7.45744 0.936494 6.09071 0.936494Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+      
+
+        <!-- <div class="breadcrumbs container">
+          <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="./index.html">
+              <span itemprop="name">Название компании </span></a>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li class="active" itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" disabled>
+              <span itemprop="name">Аренда землеройной спецтехники</span></a>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ol>
+        </div> -->
+        <div class="breadcrumbs container pt-s pb-l" itemscope="" itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">
+          <span class="item" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+            <a href="./index.html" rel="nofollow" itemprop="item" title="">
+                <span itemprop="name">Название компании</span>
+                <meta itemprop="position" content="1">
+            </a>
+          </span>
+          <span class="item" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+            <a href="./category.html" rel="nofollow" itemprop="item" title="">
+                <span itemprop="name">Аренда спецтехники</span>
+                <meta itemprop="position" content="2">
+            </a>
+          </span>
+          <span class="item" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+              <a href="./subcategory.html" itemprop="item" title="">
+                  <span itemprop="name">Аренда экскаватора</span>
+                  <meta itemprop="position" content="3">
+              </a>
+          </span>
+          <span class="item" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+              <a href="./subcategory.html" itemprop="item" title="">
+                  <span itemprop="name">Аренда гусеничного экскаватора</span>
+                  <meta itemprop="position" content="4">
+              </a>
+          </span>
+          <span class="item active" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+              <a itemprop="item" title="">
+                  <span itemprop="name">Гусеничный экскаватор Doosan S420LC-V </span>
+                  <meta itemprop="position" content="5">
+              </a>
+          </span>
+        </div>
+
+        <div class="container">
+          <h1 class="mb-xs mb-xl-l color-gray">Аренда Гусеничного экскаватора Doosan S420LC-V </h1>
+        </div>
+
+        <!-- block with photo and short info -->
+        <section class="product__info">
+          <div class="product__info-pc container d-none d-md-flex">
+            <div class="photo-gallery col-md-6 col-xl-7 col-xxl-8 d-flex flex-wrap mr-xl-m">
+              <a href="./images/product/1.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Великолепный кран">
+                  <img src="./images/product/1.jpg" alt="">
+              </a>
+              <a href="./images/product/2.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Неповторимый ковш">
+                  <img src="./images/product/2.jpg" alt="">
+              </a>
+              <a href="./images/product/3.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Погрузчик не для грусти">
+                  <img src="./images/product/3.jpg" alt="">
+              </a>
+              <a href="./images/product/4.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Шикарный кран">
+                  <img src="./images/product/4.jpg" alt="">
+              </a>
+              <a href="./images/product/5.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Лучшие гусеницы">
+                  <img src="./images/product/5.jpg" alt="">
+              </a>
+              <a href="./images/product/6.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Восхитительно удобное сидение">
+                  <img src="./images/product/6.jpg" alt="">
+              </a>
+              <a href="./images/product/7.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Инновационные технологии">
+                  <img src="./images/product/7.jpg" alt="">
+              </a>
+              <a href="./images/product/8.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Японские технологии">
+                  <img src="./images/product/8.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="info-block col-md-6 col-xl-5 col-xxl-4">
+              <div class="card floating">
+                <div class="card__inner mb-s">
+                  <div class="characters">
+                    <p class="title mb-s">Технические характеристики</p>
+                    <div class="d-flex justify-between mb-s">
+                      <span>Эксплутационнная масса</span>
+                      <span>41 200 кг</span>
+                    </div>
+                    <div class="d-flex justify-between mb-s">
+                      <span>Объем ковша</span>
+                      <span>2,10 м3</span>
+                    </div>
+                    <div class="d-flex justify-between mb-s">
+                      <span>Глубина копания, max</span>
+                      <span>7725 м</span>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <div class="d-flex justify-between mb-s">
+                      <span>Цена за час</span>
+                      <span>от 3500 ₽</span>
+                    </div>
+                    <div class="d-flex justify-between">
+                      <span>Цена за смену</span>
+                      <span>от 28 000 ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- button -->
+                <div class="mb-md-xs mb-xxl-s">
+                  <button class="orange-btn"><span>Арендовать</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- mobile version swiper -->
+          <div class="product__info-mobile container-big d-md-none">
+            <div class="swiper-container pb-m">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper photo-gallery">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <a href="./images/product/1.jpg" class="thumbnail mb-xl-xs mb-xxl-s" data-caption="Великолепный кран">
+                    <img src="./images/product/1.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./images/product/2.jpg" class="thumbnail mb-xl-xs mb-xxl-s" data-caption="Неповторимый ковш">
+                      <img src="./images/product/2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./images/product/3.jpg" class="thumbnail mb-xl-xs mb-xxl-s" data-caption="Погрузчик не для грусти">
+                      <img src="./images/product/3.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+              <!-- pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="info-block mb-s">
+              <div class="characters container">
+                <p class="title mb-s">Технические характеристики</p>
+                <div class="d-flex justify-between mb-xs">
+                  <span>Эксплутационнная масса</span>
+                  <span>41 200 кг</span>
+                </div>
+                <div class="d-flex justify-between mb-xs">
+                  <span>Объем ковша</span>
+                  <span>2,10 м3</span>
+                </div>
+                <div class="d-flex justify-between mb-2xs">
+                  <span>Глубина копания, max</span>
+                  <span>7725 м</span>
+                </div>
+              </div>
+              <div class="price container-big">
+                <div class="d-flex justify-between mb-2xs">
+                  <span>Цена за час</span>
+                  <span>от 3500 ₽</span>
+                </div>
+                <div class="d-flex justify-between">
+                  <span>Цена за смену</span>
+                  <span>от 28 000 ₽</span>
+                </div>
+              </div>
+            </div>
+            <div class="mb-xl">
+              <button class="orange-btn"><span>Арендовать</span></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- section tabs -->
+        <section class="tabs-section container mb-xl mb-xl-4xl">
+          <div class="tabs">
+            <div class="tabs__nav mb-m">
+              <a class="tabs__link tabs__link_active mr-3xs mr-md-m" href="#content-1">Характеристики</a>
+              <a class="tabs__link mr-3xs mr-md-m" href="#content-2">Описание</a>
+              <a class="tabs__link" href="#content-3">Габариты</a>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__pane tabs__pane_show" id="content-1">
+                Содержимое 1...
+              </div>
+              <!-- Описание -->
+              <div class="tabs__pane" id="content-2">
+                <p class="mb-m">Мини-погрузчик Bobcat S530 стал достойным продолжением предыдущей колесной модели S175. Сразу после выхода на российский рынок он стал популярным среди профессионалов, использующих строительную спецтехнику. Он имеет небольшие размеры и хорошие показатели производительности, надежности. В стандартной комплектации с ковшом в длину погрузчик всего 3,37 м. Его ширина составляет 1,7 м. В высоте с кабиной на 3 см не достигает 2 м. Это не мешает малышу хорошо справляться с разными строительными заданиями. При этом его стоимость низкая и доступна предприятиям с разным бюджетом и направленностью основной деятельности.
+                  <br><br>
+                  У погрузчика Бобкет S530 высота подъема ковша достигает 3,9 м, а разгрузки – 2,3 м. Допустимая грузоподъемность техники находится в пределах 869 кг, а нагрузка на опрокидывание достигает 1,7 т. Внушительный и горизонтальный вылет точки крепления ковша – 0,8 м. Все эти показатели позволяют работать в паре с большими грузовыми автомобилями. Это существенно расширяет сферу применения и эффективность погрузчиков.
+                  <br><br>
+                  Позаботились разработчики и об операторе машины. В кабине создана комфортная рабочая обстановка. Мини-погрузчик S530 имеет увеличенный дверной проем. В него легко садиться и выходить. В кабине расположено регулируемое эргономичное кресло. Предусмотрен отсек для хранения мелочей, подстаканник для кружек и стаканов с напитками, розетка на 12 В. Внутри кабины постоянно поддерживается комфортная температура за счет продуманной системы климатконтроля. Управлять погрузчиком и контролировать работу узлов помогает полноцветный дисплей на панели управления. Все вместе это позволяет оператору машины оставаться на рабочем месте долгое время и не уставать от профессиональных неудобств.</p>
+                  <span class="h2-style mb-s">Документация</span>
+                  <div class="d-flex flex-wrap">
+                    <div class="col-md-5 col-xl-4 d-flex align-center mr-md-m mb-xs mb-md-0">
+                      <img class="mr-s" src="./images/product/doc.png" alt="">
+                      <p><a href="#" class="hover-orange-underlined">Руководство по эксплуатации и обслуживанию Bobcat S530</a></p>
+                    </div>
+                    <div class="col-md-5 col-xl-4 d-flex align-center">
+                      <img class="mr-s" src="./images/product/doc-orange.png" alt="">
+                      <p><a href="#" class="hover-orange-underlined">Руководство по эксплуатации и обслуживанию Bobcat S530</a></p>
+                    </div>
+                  </div>
+              </div>
+              <!-- Габариты -->
+              <div class="tabs__pane sizes" id="content-3">
+                <div class="d-flex flex-wrap align-center">
+                  <div class="sizes__img mb-m mb-sm-0 mr-xsm-m">
+                    <img class="" src="./images/product/Rectangle.jpg" alt="">
+                  </div>
+                  <div class="sizes__characters">
+                    <span class="h3-style mb-s">Описание схемы</span>
+                    <div class="character d-flex justify-between">
+                      <p class="mb-xs mr-s">Эксплутационнная масса</p>
+                      <p class="mb-xs">41&nbsp;200&nbsp;кг</p>
+                    </div>
+                    <div class="character d-flex justify-between">
+                      <p class="mb-xs mr-s">Объем ковша</p>
+                      <p class="mb-xs">2,10&nbsp;м3</p>
+                    </div>
+                    <div class="character d-flex justify-between">
+                      <p class="mb-xs mr-s">Глубина копания, max</p>
+                      <p class="mb-xs">7725&nbsp;м</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section color text blocks -->
+        <section class="color-blocks mb-xl mb-xl-4xl">
+          <div class="row container">
+            <div class="col-xl-6 pr-xl-m">
+              <div class="color-block gray-block mb-m">
+                <p class="title mb-s">Доставка</p>
+                <p>Доставка экскаватора отличается от типа доставляемой техники. Колесные экскаваторы на короткие расстояние могут добираться самостоятельно, на дальнее расстояния экскаватор доставляют с помощью эвакуатора или трала в зависимости от габаритов арендуемой техники. Стоимость доставки рассчитывается индивидуально для каждого случая с менеджером. На сумму доставки влияет время потраченное на дорогу до места назначения.</p>
+              </div>
+              <div class="color-block light-gray-block mb-m mb-xl-0">
+                <p class="title mb-s">Гарантия</p>
+                <p>Вся техника в исправном сосоянии, проходит регулярные ТО. 
+Если на объекте с техникой произойдет поломка, наши специалисты приедут и устранят ее.</p>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="color-block yellow-block">
+                <p class="title mb-s">Оплата</p>
+                <b>Безналичная форма оплаты для юр. лиц с НДС)</b>
+                <p>Вам выставляется счёт, который необходимо оплатить в течении трех (3) банковских дней. При оплате после истечения срока - предварительно свяжитесь с Вашим менеджером. Вам будет предоставлен полный комплект документов: счёт, товарная накладная, счёт-фактура.<br><br></p>
+                <b>Наличная форма оплаты</b>
+                <p>Наличный расчет производится в рублях. Цены указаны с учетом налогов. Вам будет предоставлен комплект документов: кассовый и товарный чек.<br><br></p>
+                <b>Оплата банковскими картами</b>
+                <p>При посещении офиса нашей компании вы можете оплатить заказ банковской картой. Вам будет предоставлен комплект документов: кассовый, терминальный и товарный чек.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- products section -->
+      <section class="main-catalog mb-l mb-xl-4xl">
+        <div class="container">
+          <h2 class="mb-s">Аналогичные модели</h2>
+        </div>
+        
+        <div class="main-catalog__items justify-between-container d-flex flex-wrap">
+
+          <!-- Далее примеры мини карточек на 1, 2 и 3 фото, надо сохранять данную струетуру тегов, на ней завязан скрипт перелистывания фоток!!! в main.js -->
+
+          <!-- product card with 1 photo -->
+          <div class="product-card">
+            <a href="#">
+              <div class="product__photo">
+                <img src="./images/icons/label.png" alt="" class="hit">
+                <img src="./images/category/photo_product.jpg" alt="" class="photo">
+              </div>
+            </a>
+            <div class="photo-pagination">
+              <div class="pagin pagin-1 active showPhoto1"><div></div></div>
+            </div>
+            
+            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <div class="product__info d-xl-block">
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Эксплутационнная масса</span>
+                <span>41 200 кг</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Объем ковша</span>
+                <span>2.10 м3</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Глубина копания</span>
+                <span>max - 7725 м</span>
+              </div>
+            </div>
+            <div class="product__price">
+              <span>Цена:</span>
+              <span class="price-hour">от 3500 ₽/час</span>
+              <span class="price-day">от 28 000 ₽/смена</span>
+            </div>
+            <div class="product__btn"><button class="button rent-btn orange-btn"><span>Арендовать</span></button></div>
+          </div>
+
+          <!-- product card with 2 photo -->
+          <div class="product-card">
+            <a href="#">
+              <div class="product__photo">
+                <img src="./images/icons/label.png" alt="" class="hit">
+                <img src="./images/category/photo_product.jpg" alt="" class="photo photo-1">
+                <img src="./images/category/photo_product2.jpg" alt="" class="photo photo-2">
+                <div class="hover-block w50 showPhoto1 d-xl-block"></div>
+                <div class="hover-block w50 showPhoto2 d-xl-block"></div>
+              </div>
+            </a>
+            <div class="photo-pagination">
+              <div class="pagin active pagin-1 pr-2xs showPhoto1"><div></div></div>
+              <div class="pagin pagin-2 pr-2xs showPhoto2"><div></div></div>
+            </div>
+            
+            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <div class="product__info d-xl-block">
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Эксплутационнная масса</span>
+                <span>41 200 кг</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Объем ковша</span>
+                <span>2.10 м3</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Глубина копания</span>
+                <span>max - 7725 м</span>
+              </div>
+            </div>
+            <div class="product__price">
+              <span>Цена:</span>
+              <span class="price-hour">от 3500 ₽/час</span>
+              <span class="price-day">от 28 000 ₽/смена</span>
+            </div>
+            <div class="product__btn"><button class="button rent-btn orange-btn"><span>Арендовать</span></button></div>
+          </div>
+
+          <!-- product card with 3 photo -->
+          <div class="product-card">
+            <a href="#">
+              <div class="product__photo">
+                <img src="./images/icons/label.png" alt="" class="hit">
+                <img src="./images/category/photo_product.jpg" alt="" class="photo photo-1">
+                <img src="./images/category/photo_product2.jpg" alt="" class="photo photo-2">
+                <img src="./images/category/photo_product3.jpg" alt="" class="photo photo-3">
+                <div class="hover-block w33 showPhoto1 d-xl-block"></div>
+                <div class="hover-block w33 showPhoto2 d-xl-block"></div>
+                <div class="hover-block w33 showPhoto3 d-xl-block"></div>
+              </div>
+            </a>
+            <div class="photo-pagination">
+              <div class="pagin active pagin-1 pr-2xs showPhoto1"><div></div></div>
+              <div class="pagin pagin-2 pr-2xs showPhoto2"><div></div></div>
+              <div class="pagin pagin-3 pr-2xs showPhoto3"><div></div></div>
+            </div>
+            
+            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <div class="product__info d-xl-block">
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Эксплутационнная масса</span>
+                <span>41 200 кг</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Объем ковша</span>
+                <span>2.10 м3</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Глубина копания</span>
+                <span>max - 7725 м</span>
+              </div>
+            </div>
+            <div class="product__price">
+              <span>Цена:</span>
+              <span class="price-hour">от 3500 ₽/час</span>
+              <span class="price-day">от 28 000 ₽/смена</span>
+            </div>
+            <div class="product__btn"><button class="button rent-btn orange-btn"><span>Арендовать</span></button></div>
+          </div>
+
+          <!-- product card with 1 photo -->
+          <div class="product-card">
+            <a href="#">
+              <div class="product__photo">
+                <img src="./images/icons/label.png" alt="" class="hit">
+                <img src="./images/category/photo_product.jpg" alt="" class="photo">
+              </div>
+            </a>
+            <div class="photo-pagination">
+              <div class="pagin pagin-1 active showPhoto1"><div></div></div>
+            </div>
+            
+            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <div class="product__info d-xl-block">
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Эксплутационнная масса</span>
+                <span>41 200 кг</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Объем ковша</span>
+                <span>2.10 м3</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Глубина копания</span>
+                <span>max - 7725 м</span>
+              </div>
+            </div>
+            <div class="product__price">
+              <span>Цена:</span>
+              <span class="price-hour">от 3500 ₽/час</span>
+              <span class="price-day">от 28 000 ₽/смена</span>
+            </div>
+            <div class="product__btn">
+              <a href="#" class="compare d-xl-block">Сравнить</a>
+              <button class="button rent-btn orange-btn"><span>Узнать цену</span></button>
+            </div>
+          </div>
+
+          <!-- product card with 2 photo -->
+          <div class="product-card">
+            <a href="#">
+              <div class="product__photo">
+                <img src="./images/icons/label.png" alt="" class="hit">
+                <img src="./images/category/photo_product.jpg" alt="" class="photo photo-1">
+                <img src="./images/category/photo_product2.jpg" alt="" class="photo photo-2">
+                <div class="hover-block w50 showPhoto1 d-xl-block"></div>
+                <div class="hover-block w50 showPhoto2 d-xl-block"></div>
+              </div>
+            </a>
+            <div class="photo-pagination">
+              <div class="pagin active pagin-1 pr-2xs showPhoto1"><div></div></div>
+              <div class="pagin pagin-2 pr-2xs showPhoto2"><div></div></div>
+            </div>
+            
+            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <div class="product__info d-xl-block">
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Эксплутационнная масса</span>
+                <span>41 200 кг</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Объем ковша</span>
+                <span>2.10 м3</span>
+              </div>
+              <div class="row product__parameter justify-between">
+                <span class="mr-3xs">Глубина копания</span>
+                <span>max - 7725 м</span>
+              </div>
+            </div>
+            <div class="product__price">
+              <span>Цена:</span>
+              <span class="price-hour">от 3500 ₽/час</span>
+              <span class="price-day">от 28 000 ₽/смена</span>
+            </div>
+            <div class="product__btn">
+              <a href="#" class="compare d-xl-block">Сравнить</a>
+              <button class="button rent-btn orange-btn"><span>Узнать цену</span></button>
+            </div>
+          </div>
+   
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Специфичные для страниц категорий блоки: оповещения у фильтров, сортировки -->
+    <div id="sortingApplied" class="action-alert accepted"><span>Сортировка применена!</span></div>
+    <div id="filterApplied" class="action-alert accepted"><span>Фильтр применен!<br>Найдено 10 000 единиц техники</span></div>
+    <div id="errorAlert" class="action-alert declined"><span>Ошибка! Приносим извинения!<br>Попробуйте перезагрузить страницу и воспользоваться фильтром/сортировкой снова.</span></div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__inner container">
+          <div class="info-block">
+            <div class="info-title"><span>Наш адрес</span></div>
+            <div class="info-content">
+              <p>
+                г.Красноярск, пр.Металлургов 1М, стр.1.
+Экспоцентр "Мегаполис"
+              </p>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-title"><span>График работы</span></div>
+            <div class="info-content">
+              <p>
+                Пн-Пт с 9:00 по 18:00 по МСК
+              </p>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-title"><span>Наш телефон</span></div>
+            <div class="info-content">
+              <a href="tel:+7 (800) 999-00-00" class="hover-opacity">+7 (800) 999-00-00</a>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-title"><span>Наша почта</span></div>
+            <div class="info-content">
+              <a href="mailto:mail@mail.com" class="hover-opacity">mail@mail.com</a>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="info-title"><span>Мы в соц. сетях:</span></div>
+            <div class="info-content">
+              <div class="social-icons d-flex">
+                <a href="#">
+                  <svg width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.6161 0.887059C38.3759 1.36471 39.7633 2.76353 40.2371 4.53765C41.117 7.77882 41.0832 14.5341 41.0832 14.5341C41.0832 14.5341 41.0832 21.2553 40.2371 24.4965C39.7633 26.2706 38.3759 27.6694 36.6161 28.1471C33.4012 29 20.5416 29 20.5416 29C20.5416 29 7.71578 29 4.46703 28.1129C2.70729 27.6353 1.3198 26.2365 0.846029 24.4624C0 21.2553 0 14.5 0 14.5C0 14.5 0 7.77882 0.846029 4.53765C1.3198 2.76353 2.74113 1.33059 4.46703 0.852941C7.68194 0 20.5416 0 20.5416 0C20.5416 0 33.4012 0 36.6161 0.887059ZM16.4468 8.29055L27.1406 14.5L16.4468 20.7094V8.29055Z" />
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5849 0C10.6469 0 10.1526 0.017219 8.60596 0.0876044C7.0623 0.158292 6.00862 0.402677 5.08665 0.76125C4.13297 1.1316 3.32398 1.62702 2.51801 2.43328C1.71144 3.23924 1.21602 4.04822 0.844452 5.00159C0.484969 5.92385 0.240279 6.97782 0.170799 8.52087C0.101621 10.0675 0.0834961 10.562 0.0834961 14.5C0.0834961 18.438 0.101017 18.9307 0.171101 20.4773C0.242092 22.021 0.48648 23.0746 0.844754 23.9966C1.21541 24.9503 1.71084 25.7593 2.5171 26.5652C3.32277 27.3718 4.13176 27.8684 5.08484 28.2388C6.00741 28.5973 7.06139 28.8417 8.60475 28.9124C10.1514 28.9828 10.6453 29 14.583 29C18.5213 29 19.014 28.9828 20.5607 28.9124C22.1044 28.8417 23.1593 28.5973 24.0819 28.2388C25.0352 27.8684 25.843 27.3718 26.6487 26.5652C27.4552 25.7593 27.9507 24.9503 28.3222 23.9969C28.6787 23.0746 28.9234 22.0207 28.9959 20.4776C29.0654 18.931 29.0835 18.438 29.0835 14.5C29.0835 10.562 29.0654 10.0678 28.9959 8.52117C28.9234 6.97752 28.6787 5.92385 28.3222 5.0019C27.9507 4.04822 27.4552 3.23924 26.6487 2.43328C25.8421 1.62672 25.0355 1.1313 24.0809 0.76125C23.1566 0.402677 22.1023 0.158292 20.5586 0.0876044C19.0119 0.017219 18.5195 0 14.5803 0H14.5849ZM13.2841 2.61302C13.6701 2.61242 14.1009 2.61302 14.5849 2.61302C18.4564 2.61302 18.9153 2.62692 20.4441 2.6964C21.8579 2.76104 22.6252 2.99727 23.1363 3.19574C23.813 3.45855 24.2954 3.77272 24.8026 4.28022C25.3101 4.78772 25.6243 5.27105 25.8877 5.94772C26.0862 6.45824 26.3227 7.22553 26.3871 8.63928C26.4566 10.1678 26.4717 10.627 26.4717 14.4967C26.4717 18.3664 26.4566 18.8255 26.3871 20.3541C26.3224 21.7678 26.0862 22.5351 25.8877 23.0456C25.6249 23.7223 25.3101 24.2041 24.8026 24.7113C24.2951 25.2188 23.8133 25.533 23.1363 25.7958C22.6258 25.9952 21.8579 26.2308 20.4441 26.2954C18.9156 26.3649 18.4564 26.38 14.5849 26.38C10.713 26.38 10.2541 26.3649 8.72559 26.2954C7.31182 26.2302 6.54452 25.994 6.03309 25.7955C5.35642 25.5327 4.87308 25.2185 4.36557 24.711C3.85807 24.2035 3.5439 23.7214 3.28048 23.0444C3.08201 22.5339 2.84547 21.7666 2.78113 20.3529C2.71165 18.8243 2.69775 18.3652 2.69775 14.4931C2.69775 10.6209 2.71165 10.1642 2.78113 8.63566C2.84577 7.22191 3.08201 6.45461 3.28048 5.94349C3.54329 5.26682 3.85807 4.78349 4.36557 4.27599C4.87308 3.76849 5.35642 3.45432 6.03309 3.19091C6.54422 2.99153 7.31182 2.75591 8.72559 2.69096C10.0632 2.63054 10.5816 2.61242 13.2841 2.6094V2.61302ZM22.3249 5.02062C21.3643 5.02062 20.5849 5.79909 20.5849 6.76002C20.5849 7.72065 21.3643 8.50002 22.3249 8.50002C23.2855 8.50002 24.0649 7.72065 24.0649 6.76002C24.0649 5.7994 23.2855 5.02002 22.3249 5.02002V5.02062ZM14.5849 7.05365C10.4726 7.05365 7.13842 10.3877 7.13842 14.5C7.13842 18.6123 10.4726 21.9448 14.5849 21.9448C18.6972 21.9448 22.0301 18.6123 22.0301 14.5C22.0301 10.3877 18.6969 7.05365 14.5846 7.05365H14.5849ZM14.5849 9.66667C17.2541 9.66667 19.4182 11.8305 19.4182 14.5C19.4182 17.1692 17.2541 19.3333 14.5849 19.3333C11.9153 19.3333 9.75147 17.1692 9.75147 14.5C9.75147 11.8305 11.9153 9.66667 14.5849 9.66667Z" />
+                  </svg>
+                </a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bot">
+        <div class="footer__inner container">
+          <div class="info-flexbox mb-m mb-sm-l">
+            <div class="info-block mb-m mb-sm-0">
+              <div class="info-title mb-2xs mb-sm-xs">
+                <span>Аренда спецтехники по виду работ</span>
+              </div>
+              <div class="info-content">
+                <ul>
+                  <li><a href="./category.html">Землеройная техника</a></li>
+                  <li><a href="./category.html">Дорожно-ремонтная техника</a></li>
+                  <li><a href="./category.html">Строительная техника</a></li>
+                  <li><a href="./category.html">Техника для высотных работ</a></li>
+                  <li><a href="./category.html">Погрузочаня техника</a></li>
+                  <li><a href="./category.html">Техника для перевозок</a></li>
+                  <li><a href="./category.html">Коммунальная техника</a></li>
+                  <li><a href="./category.html">Сельскохозяйственная техника</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="info-block d-xl-block">
+              <div class="info-title mb-2xs mb-sm-xs">
+                <span>Виды техники</span>
+              </div>
+              <div class="info-content">
+                <ul>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                  <li><a href="./subcategory.html">Экскаваторы</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-title mb-2xs mb-sm-xs">
+                <span>Документы</span>
+              </div>
+              <div class="info-content">
+                <ul>
+                  <li><a href="./privacy.html">Политика конфиденциальности и cookies</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Карта сайта</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#" class="color-yellow hover-yellow underlined">Скачать реквизиты компании</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="info-flexbox">
+            <div class="info-block mb-m">
+              <div class="info-content">
+                <p>© ООО «Красроуд», 2008-2021 18+ © «Все права защищены»</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-content">
+                <a href="#" class="d-block mb-2xs">SEO-продвижение, разработка
+                  сайта, контекстная реклама:</a>
+                <a href="#">
+                  <img src="./images/engineers_logo.png" alt="Инженеры продаж">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="mobile-navigation">
+      <ul>
+        <li class="home-tab active">
+          <a href="./index.html">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 9.14815L10.5 1L20.5 9.14815" />
+              <path d="M3.46289 9.14819V20C3.46289 20.5523 3.91061 21 4.46289 21H16.537C17.0892 21 17.537 20.5523 17.537 20V9.14819" />
+            </svg>
+            Главная
+          </a>
+        </li>
+        <li class="catalog-tab">
+          <a href="./catalog.html">
+            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 1H20.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5 6H20.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5 16.5557H13.0741H20.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5 11.3704H20.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5 21H8.58201" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Каталог
+          </a>
+        </li>
+        <li class="search-tab">
+          <button id="showSearch">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.09071 1.80095e-08C7.25587 -2.50484e-05 8.39658 0.334018 9.37751 0.962497C10.3584 1.59098 11.1384 2.48751 11.6249 3.54573C12.1113 4.60395 12.2839 5.77944 12.122 6.93273C11.9602 8.08602 11.4708 9.1687 10.7118 10.0523L16 15.3379L15.3376 16L10.0484 10.7135C9.30249 11.3511 8.41343 11.799 7.45696 12.0192C6.5005 12.2393 5.50496 12.2252 4.55516 11.9779C3.60535 11.7306 2.7294 11.2576 2.00192 10.599C1.27444 9.94047 0.716974 9.11595 0.377009 8.19566C0.0370426 7.27538 -0.0753542 6.2866 0.0493907 5.31355C0.174136 4.34049 0.532326 3.41199 1.09346 2.60711C1.65459 1.80223 2.40203 1.14483 3.27213 0.690889C4.14223 0.23695 5.10921 -7.54365e-05 6.09071 1.80095e-08ZM6.09071 0.936494C4.72398 0.936494 3.41322 1.47916 2.44679 2.4451C1.48036 3.41105 0.93743 4.72116 0.93743 6.08721C0.93743 7.45327 1.48036 8.76337 2.44679 9.72932C3.41322 10.6953 4.72398 11.2379 6.09071 11.2379C7.45744 11.2379 8.7682 10.6953 9.73463 9.72932C10.7011 8.76337 11.244 7.45327 11.244 6.08721C11.244 4.72116 10.7011 3.41105 9.73463 2.4451C8.7682 1.47916 7.45744 0.936494 6.09071 0.936494Z"/>
+            </svg>
+Поиск</button>
+        </li>
+        <li class="contacts-tab">
+          <a href="./contacts.html">
+            <svg width="13" height="20" viewBox="0 0 13 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 20C6.5 20 13 10.7054 13 6.89655C13 3.08769 10.0899 0 6.5 0C2.91015 0 0 3.08769 0 6.89655C0 10.7054 6.5 20 6.5 20ZM6.5 10.3449C8.29492 10.3449 9.75 8.80101 9.75 6.89657C9.75 4.99214 8.29492 3.4483 6.5 3.4483C4.70507 3.4483 3.25 4.99214 3.25 6.89657C3.25 8.80101 4.70507 10.3449 6.5 10.3449Z"/>
+            </svg>
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/baguetteBox.min.js" async></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- gallery on pc -->
+  <script>
+    window.addEventListener('load', function() {
+      baguetteBox.run('.photo-gallery', {
+        buttons: true
+      });
+    });
+  </script>
+  <!-- floating block on pc info block -->
+  <script>
+    $(function(){
+    var topPos = $('.floating').offset().top;
+      $(window).scroll(function() {
+        var top = $(document).scrollTop(),
+            pip = $('.info-block').height(),
+            height = $('.floating').outerHeight();
+        if (top > 0 && top < pip - height) {$('.floating').addClass('fixed').removeAttr("style");}
+        else if (top > pip - height) {$('.floating').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
+        else {$('.floating').removeClass('fixed');}
+      });
+    });
+  </script>
+  <!-- photo swiper in mobile -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+  <!-- tabs panel -->
+  <script>
+    var $tabs = function (target) {
+      var
+        _elemTabs = (typeof target === 'string' ? document.querySelector(target) : target),
+        _eventTabsShow,
+        _showTab = function (tabsLinkTarget) {
+          var tabsPaneTarget, tabsLinkActive, tabsPaneShow;
+          tabsPaneTarget = document.querySelector(tabsLinkTarget.getAttribute('href'));
+          tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs__link_active');
+          tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tabs__pane_show');
+          // если следующая вкладка равна активной, то завершаем работу
+          if (tabsLinkTarget === tabsLinkActive) {
+            return;
+          }
+          // удаляем классы у текущих активных элементов
+          if (tabsLinkActive !== null) {
+            tabsLinkActive.classList.remove('tabs__link_active');
+          }
+          if (tabsPaneShow !== null) {
+            tabsPaneShow.classList.remove('tabs__pane_show');
+          }
+          // добавляем классы к элементам (в завимости от выбранной вкладки)
+          tabsLinkTarget.classList.add('tabs__link_active');
+          tabsPaneTarget.classList.add('tabs__pane_show');
+          document.dispatchEvent(_eventTabsShow);
+        },
+        _switchTabTo = function (tabsLinkIndex) {
+          var tabsLinks = _elemTabs.querySelectorAll('.tabs__link');
+          if (tabsLinks.length > 0) {
+            if (tabsLinkIndex > tabsLinks.length) {
+              tabsLinkIndex = tabsLinks.length;
+            } else if (tabsLinkIndex < 1) {
+              tabsLinkIndex = 1;
+            }
+            _showTab(tabsLinks[tabsLinkIndex - 1]);
+          }
+        };
+
+      _eventTabsShow = new CustomEvent('tab.show', { detail: _elemTabs });
+
+      _elemTabs.addEventListener('click', function (e) {
+        var tabsLinkTarget = e.target;
+        // завершаем выполнение функции, если кликнули не по ссылке
+        if (!tabsLinkTarget.classList.contains('tabs__link')) {
+          return;
+        }
+        // отменяем стандартное действие
+        e.preventDefault();
+        _showTab(tabsLinkTarget);
+      });
+
+      return {
+        showTab: function (target) {
+          _showTab(target);
+        },
+        switchTabTo: function (index) {
+          _switchTabTo(index);
+        }
+      }
+
+    };
+
+    $tabs('.tabs');
+  </script>
+</body>
+
+</html>

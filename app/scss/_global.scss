@@ -203,6 +203,19 @@ h2, span.h2-style {
 	}
 }
 
+h3, span.h3-style {
+	display: block;
+	@extend %bebas-neue-font;
+	color: $gray;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 16px;
+	@include media-xl {
+		font-size: 20px;
+		line-height: 20px;
+	}
+}
+
 // buttons
 .light-gray-btn {
 	padding: 10px 75px;
@@ -622,6 +635,18 @@ h2, span.h2-style {
 	}
 	&:active {
 		color: white!important;
+	}
+}
+.hover-orange-underlined {
+	@extend %transition-fast;
+	&:hover {
+		color: $orange!important;
+		text-decoration: underline;
+	}
+	&:active {
+		text-decoration: none;
+		color: $gray!important;
+		opacity: 0.5;
 	}
 }
 

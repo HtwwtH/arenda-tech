@@ -1,0 +1,273 @@
+// стили страницы карточка товара
+
+@import '../vars';
+@import '../media';
+
+h1 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.product__info-pc {
+  @include media-md {
+    margin-bottom: 128px;
+  }
+  @include media-xxl {
+    margin-bottom: 120px;
+  }
+}
+
+.product__info-pc .photo-gallery {
+  @include media-md {
+    a {
+      margin-right: 16px;
+    }
+    a:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @include media-xxl {
+    a, a:nth-child(2n) {
+      margin-right: 28px;
+    }
+    a:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.photo-gallery .thumbnail {
+  @include media-md {
+  width: 156px;
+  height: 156px;
+  }
+  @include media-xl {
+    width: 312px;
+    height: 312px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 260px;
+  @include media-xsm {
+    height: 400px;
+  }
+}
+.swiper-button-next, .swiper-button-prev {
+  top: 45%;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 18px;
+  color: $yellow;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets {
+  bottom: 11px;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $yellow;
+}
+.swiper-pagination-bullet {
+  background: $light-gray;
+  opacity: 1;
+}
+
+// info card
+.fixed {
+  position: fixed;
+  @include media-md {
+    // top: 322px;
+    z-index: 999;
+  }
+}
+.product__info-pc .info-block {
+  position: relative;
+}
+.product__info-pc .info-block .card button.orange-btn {
+  width: 100%;
+  padding-top: 22.5px;
+  padding-bottom: 22.5px;
+  @include media-xl {
+    max-width: 448px!important;
+  }
+  @include media-xxl {
+    max-width: 476px!important;
+  }
+}
+.product__info-pc .info-block .card__inner {
+  box-shadow: 4px 4px 17px rgba(165, 165, 165, 0.25);
+  border-radius: 10px;
+  @include media-md {
+    width: 350px;
+  }
+  @include media-xl {
+    width: 448px;
+  }
+  @include media-xxl {
+    width: 476px;
+  }
+  .characters {
+    background: white;
+    padding: 24px;
+    .title {
+      color: $gray;
+      @extend %bebas-neue-font;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .price {
+    padding: 16px 24px 22px 24px;
+    background: $gray;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+.product__info-mobile .info-block {
+  .characters {
+    background: white;
+    .title {
+      color: $gray;
+      @extend %bebas-neue-font;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .price {
+    padding: 8px 16px;
+    background: $gray;
+    color: white;
+  }
+}
+.product__info-mobile button.orange-btn {
+  width: 288px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  margin: 0 auto;
+}
+
+// tabs section
+.tabs {
+
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.tabs__link {
+  max-width: 256px;
+  border: 1px solid #424242;
+  border-radius: 7px;
+  padding: 12px 7px;
+  text-decoration: none;
+  color: $gray;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  @include media-md {
+    padding: 22.5px 7px;
+    font-size: 16px;
+    line-height: 20px;  
+  }
+  @include media-xl {
+    width: 256px;
+    padding: 22.5px 7px;
+    font-size: 16px;
+    line-height: 20px;  
+  }
+}
+
+.tabs__link_active {
+  background: $gradient;
+  border: none;
+  box-shadow: 4px 4px 10px rgba(249, 168, 37, 0.25);
+}
+
+.tabs__link:not(.tabs__link_active):hover,
+.tabs__link:not(.tabs__link_active):focus {
+  background-color: $yellow;
+  @extend %transition;
+}
+
+.tabs__content {
+
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+}
+
+.tabs__pane.sizes {
+  .sizes__img {
+    width: 288px;
+    height: 288px;
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 288px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    @include media-xl {
+      width: 544px;
+      height: 403px;
+      img {
+        max-width: 544px;
+      }
+    }
+  }
+  .sizes__characters {
+    width: calc(50% - 32px);
+  }
+  .character {
+    max-width: 400px;
+  }
+}
+
+// color text info blocks
+.color-blocks .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.color-block {
+  padding: 24px;
+  @include media-md {
+    border-radius: 10px;
+  }
+  .title {
+    @extend %bebas-neue-font;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  &.gray-block {
+    background: $gray;
+    color: white;
+  }
+  &.light-gray-block {
+    background: $light-gray;
+    color: $gray;
+  }
+  &.yellow-block {
+    background: $yellow;
+    color: #000;
+  }
+}

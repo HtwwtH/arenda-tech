@@ -40,3 +40,7 @@ $mediaWidthPC: 1880px;  //xxl
 %transition {
   transition: all .3s ease-in-out;
 }
+
+%transition-fast {
+  transition: all .1s ease-in-out;
+}
