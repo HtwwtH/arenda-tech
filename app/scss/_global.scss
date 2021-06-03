@@ -165,11 +165,11 @@ a {
 	color: $gray;
 }
 
-li.dropdown{
+p.dropdown, li.dropdown{
 	&:after {
 		content: url(../images/icons/dropdown.svg);
 		display: inline-block;
-		margin-left: 2px;
+		margin-left: 4px;
 		transition: all .3s ease;
 	}
 	&:hover:after {

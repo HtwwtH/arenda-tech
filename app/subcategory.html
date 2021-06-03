@@ -640,19 +640,83 @@
             <img class="close ml-2xs d-none" src="./images/icons/icon_close.svg" alt="">
           </button>
 
-          <div class="sort-pc d-none d-md-flex ">
-            <div class="row container align-center justify-row">
-              <p class="mr-2xs">Сортировка:</p>
-              <button class="mr-3xs active">По возрастанию цены</button>
-              <button class="mr-3xs">По убыванию цены</button>
-              <button class="mr-3xs">По популярности</button>
+          <div class="sort-pc d-none d-xl-flex ">
+            <div class="row container align-center justify-between">
+              <div class="d-none d-xl-flex">
+                <p class="filter__btn-pc filter__btn-pc-1 dropdown mr-l">Тоннаж</p>
+                <p class="filter__btn-pc filter__btn-pc-2 dropdown mr-l">Объем ковша</p>
+                <p class="remove-filters mr-l">Сбросить фильтры</p>
+              </div>
+
+              <div class="d-flex">
+                <p class="mr-2xs">Сортировка:</p>
+                <button class="mr-3xs active">По возрастанию цены</button>
+                <button class="mr-3xs">По убыванию цены</button>
+                <button class="mr-3xs">По популярности</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="container relative d-none d-xl-block">
+        <!-- выпадающее окно фильтр с радиокнопками пк версия -->
+        <div class="filter__block-pc radio filter__block-pc-1">
+          <div class="form_radio pc__filter_radio">
+            <input id="pc__filter-1-radio-1" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-1">Case</label>
+          </div>
+          <div class="form_radio pc__filter_radio">
+            <input id="pc__filter-1-radio-2" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-2">Hitachi</label>
+          </div>
+          <div class="form_radio pc__filter_radio">
+            <input id="pc__filter-1-radio-3" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-3">LiuGong</label>
+          </div>
+          <div class="form_radio pc__filter_radio">
+            <input id="pc__filter-1-radio-4" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-4">Doosan</label>
+          </div>
+          <div class="form_radio pc__filter_radio">
+            <input id="pc__filter-1-radio-5" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-5">AmphiMaster</label>
+          </div>
+          <div class="form_radio pc__filter_radio">
+            <input id="pc__filter-1-radio-6" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-6">Waterking</label>
+          </div>
+          <div class="form_radio pc__filter_radio">
+            <input id="pc__filter-1-radio-7" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-7">МТЗ</label>
+          </div>
+          <div class="form_radio pc__filter_radio">
+            <input id="pc__filter-1-radio-8" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-8">NewHolland</label>
+          </div>
+        </div>
+
+        <!-- выпадающее окно фильтр со слайдером пк версия -->
+        <div class="filter__block-pc slider  filter__block-pc-2">
+          <div class="filter__content">
+            <div class="filter__input mb-xs">
+              <p>от</p>
+              <input type="number" id="input-min-value" value="0">
+              <p>до</p>
+              <input type="number" id="input-max-value" value="40">
+            </div>
+            <div id="filterSlider-pc" class="custom-slider"></div>
+            <div class="filter__labels d-flex justify-between mt-xs mb-s">
+              <p class="filter__label-min">0</p>
+              <p class="filter__label-max">40</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Выпадающее окно фильтр мобильной версии -->
-      <div class="filter-mobile container pt-s pb-s">
-        <div class="filter-mobile__inner">
+      <div class="filter-mobile container pt-s pb-s d-xl-none">
+        <div class="filter-mobile__inner pl-md-xs pr-md-xs">
           <form class="brands-filter">
             <div class="row mb-xs">
               <p>Бренды</p>
@@ -768,7 +832,7 @@
       </div>
       <!-- Выпадающее окно сортировка мобильной версии -->
       <div class="sort-mobile container pt-s pb-s">
-        <form class="sort-mobile__inner">
+        <form class="sort-mobile__inner pl-md-xs pr-md-xs">
           <p class="mb-xs">Сортировка</p>
           <div class="form_radio sort_radio">
             <input id="sortradio-1" type="radio" name="radio" value="1" checked>
@@ -1102,9 +1166,9 @@
     </main>
 
     <!-- Специфичные для страниц категорий блоки: оповещения у фильтров, сортировки -->
-    <div id="sortingApplied" class="action-alert accepted"><span>Сортировка применена!</span></div>
-    <div id="filterApplied" class="action-alert accepted"><span>Фильтр применен!<br>Найдено 10 000 единиц техники</span></div>
-    <div id="errorAlert" class="action-alert declined"><span>Ошибка! Приносим извинения!<br>Попробуйте перезагрузить страницу и воспользоваться фильтром/сортировкой снова.</span></div>
+    <div id="sortingApplied" class="action-alert accepted"><div class="container"><span>Сортировка применена!</span></div></div>
+    <div id="filterApplied" class="action-alert accepted"><div class="container"><span>Фильтр применен!<br>Найдено 10 000 единиц техники</span></div></div>
+    <div id="errorAlert" class="action-alert declined"><div class="container"><span>Ошибка! Приносим извинения!<br>Попробуйте перезагрузить страницу и воспользоваться фильтром/сортировкой снова.</span></div></div>
 
     <!-- footer -->
     <footer class="footer">
@@ -1307,6 +1371,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/nouislider.min.js"></script>
+  <!-- MOBILE VERSION slider -->
   <script>
     var filterSlider = document.getElementById('filterSlider');
 
@@ -1319,7 +1384,7 @@
         }
     });
 
-    let slider = document.querySelector('.filter__content');
+    let slider = document.querySelector('.volume-filter').querySelector('.filter__content');
     let min = parseFloat(slider.querySelector(".filter__label-min").textContent);
     let max = parseFloat(slider.querySelector(".filter__label-max").textContent);
     let minVal = slider.querySelector('#input-min-value');
@@ -1361,6 +1426,64 @@
       }
       else
         filterSlider.noUiSlider.set([null, this.value]);
+    });
+  </script>
+
+  <!-- PC VERSION slider -->
+  <script>
+    var filterSliderPC = document.getElementById('filterSlider-pc');
+
+    noUiSlider.create(filterSliderPC, {
+        start: [0, 40],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 40
+        }
+    });
+
+    let sliderPC = document.querySelector('.filter__block-pc.slider').querySelector('.filter__content');
+    let minPC = parseFloat(sliderPC.querySelector(".filter__label-min").textContent);
+    let maxPC = parseFloat(sliderPC.querySelector(".filter__label-max").textContent);
+    let minValPC = sliderPC.querySelector('#input-min-value');
+    let maxValPC = sliderPC.querySelector('#input-max-value');
+
+    filterSliderPC.noUiSlider.on('update', function (values, handle) {
+
+      let value = values[handle];
+
+      if (handle) {
+        if (value < maxPC)
+          maxValPC.value = Math.round(value);
+      } else {
+        if (value > minPC)
+          minValPC.value = Math.round(value);
+      }
+    });
+
+    minValPC.addEventListener('input', function (event) {
+      if (this.value < minPC) {
+        minValPC.value = this.value;
+        filterSliderPC.noUiSlider.set([minPC, null]);
+      }
+      else {
+        filterSliderPC.noUiSlider.set([this.value, null]);
+      }
+
+    });
+
+    maxValPC.addEventListener('input', function (event) {
+      if (this.value > maxPC) {
+        maxValPC.value = this.value;
+        filterSliderPC.noUiSlider.set([null, maxPC]);
+        (filterSliderPC.closest(".ocfilter-option").querySelector('.show-filtered__button')).remove();
+      }
+      else if (this.value < minPC) {
+        maxValPC.value = this.value;
+        filterSliderPC.noUiSlider.set([null, maxPC]);
+      }
+      else
+        filterSliderPC.noUiSlider.set([null, this.value]);
     });
   </script>
 </body>

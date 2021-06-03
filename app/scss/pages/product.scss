@@ -52,11 +52,27 @@ h1 {
   }
 }
 
+.no-photo .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid $light-gray;
+}
+
 .swiper-container {
   width: 100%;
   height: 260px;
   @include media-xsm {
     height: 400px;
+  }
+  .swiper-wrapper {
+    height: 100%;
+    .swiper-slide {
+      height: 100%;
+      .thumbnail {
+        height: 100%;
+      }
+    }
   }
 }
 .swiper-button-next, .swiper-button-prev {
@@ -66,8 +82,12 @@ h1 {
   font-size: 18px;
   color: $yellow;
 }
-.swiper-container-horizontal>.swiper-pagination-bullets {
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-fraction {
   bottom: 11px;
+}
+.swiper-pagination-fraction {
+  text-align: center;
+  margin-top: 4px;
 }
 .swiper-pagination-bullet {
   width: 12px;
@@ -123,6 +143,9 @@ h1 {
       @extend %bebas-neue-font;
       font-size: 20px;
       line-height: 20px;
+    }
+    div:not(:last-child) {
+      margin-bottom: 19px;
     }
   }
   .price {
@@ -216,6 +239,34 @@ h1 {
   display: block;
 }
 
+// вкладка характеристики
+.tabs__pane.characters {
+  .title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .character {
+    width: 100%;
+    max-width: 698px;
+    justify-content: space-between;
+    p:first-child {
+      flex-grow: 1;
+      max-width: 257px;
+    }
+    p:last-child {
+      width: 75px;
+      flex-shrink: 0;
+      @include media-xsm {
+        width: 218px;
+      }
+      @include media-sm {
+        width: 245px;
+      }
+    }
+  }
+}
+
+// вкладка габариты
 .tabs__pane.sizes {
   .sizes__img {
     width: 288px;

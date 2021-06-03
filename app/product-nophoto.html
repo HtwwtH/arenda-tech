@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Аренда техники</title>
   <link rel="stylesheet" href="css/baguetteBox.min.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/category.min.css">
   <link rel="stylesheet" href="css/product.min.css">
@@ -568,35 +567,14 @@
         <!-- block with photo and short info -->
         <section class="product__info">
           <div class="product__info-pc container d-none d-md-flex">
-            <div class="photo-gallery col-md-6 col-xl-7 col-xxl-8 d-flex flex-wrap mr-xl-m">
-              <a href="./images/product/1.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Великолепный кран">
-                  <img src="./images/product/1.jpg" alt="">
-              </a>
-              <a href="./images/product/2.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Неповторимый ковш">
-                  <img src="./images/product/2.jpg" alt="">
-              </a>
-              <a href="./images/product/3.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Погрузчик не для грусти">
-                  <img src="./images/product/3.jpg" alt="">
-              </a>
-              <a href="./images/product/4.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Шикарный кран">
-                  <img src="./images/product/4.jpg" alt="">
-              </a>
-              <a href="./images/product/5.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Лучшие гусеницы">
-                  <img src="./images/product/5.jpg" alt="">
-              </a>
-              <a href="./images/product/6.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Восхитительно удобное сидение">
-                  <img src="./images/product/6.jpg" alt="">
-              </a>
-              <a href="./images/product/7.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Инновационные технологии">
-                  <img src="./images/product/7.jpg" alt="">
-              </a>
-              <a href="./images/product/8.jpg" class="thumbnail mb-md-xs mb-xxl-s" data-caption="Японские технологии">
-                  <img src="./images/product/8.jpg" alt="">
-              </a>
+            <div class="no-photo col-md-6 col-xl-7 col-xxl-8 d-flex mr-md-s mr-xl-m">
+              <div class="thumbnail mb-md-xs mb-xxl-s">
+                  <img src="./images/product/no_photo.jpg" alt="">
+              </div>
             </div>
 
             <div class="info-block col-md-6 col-xl-5 col-xxl-4">
-              <div class="card floating">
+              <div class="card">
                 <div class="card__inner mb-s">
                   <div class="characters">
                     <p class="title mb-xs">Технические характеристики</p>
@@ -639,19 +617,9 @@
               <div class="swiper-wrapper photo-gallery">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <a href="./images/product/1.jpg" class="thumbnail mb-xl-xs mb-xxl-s" data-caption="Великолепный кран">
-                    <img src="./images/product/1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="./images/product/2.jpg" class="thumbnail mb-xl-xs mb-xxl-s" data-caption="Неповторимый ковш">
-                      <img src="./images/product/2.jpg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="./images/product/3.jpg" class="thumbnail mb-xl-xs mb-xxl-s" data-caption="Погрузчик не для грусти">
-                      <img src="./images/product/3.jpg" alt="">
-                  </a>
+                  <div class="thumbnail mb-md-xs mb-xxl-s">
+                      <img src="./images/product/no_photo.jpg" alt="">
+                  </div>
                 </div>
               </div>
               <!-- pagination -->
@@ -1250,7 +1218,6 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/baguetteBox.min.js" async></script>
-  <script src="js/swiper-bundle.min.js"></script>
   <!-- gallery on pc -->
   <script>
     window.addEventListener('load', function() {
@@ -1271,19 +1238,6 @@
         else if (top > pip - height) {$('.floating').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
         else {$('.floating').removeClass('fixed');}
       });
-    });
-  </script>
-  <!-- photo swiper in mobile -->
-  <script>
-    const swiper = new Swiper('.swiper-container', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }
     });
   </script>
   <!-- tabs panel -->

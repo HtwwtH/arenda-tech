@@ -4,4 +4,38 @@
 @import '../media';
 
 .contacts {
+  .social-icons a path {
+    fill: $yellow;
+    &:hover {
+      @extend %transition;
+      fill: $orange;
+    }
+    &:active {
+      @extend %transition;
+      fill: $gray;
+    }
+  }
+}
+
+.map__container {
+  width: 288px;
+  height: 252px;
+  border-radius: 10px;
+  background: $light-gray;
+  @include media-md {
+    width: 350px;
+    height: 366px;
+  }
+  @include media-xl {
+    width: 641px;
+    height: 450px;
+  }
+  @include media-xxl {
+    width: 862px;
+  }
+  iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
 }

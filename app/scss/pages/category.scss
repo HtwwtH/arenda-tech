@@ -25,11 +25,21 @@
 // сортировка
 .sorting {
 	background: $yellow;
-	// padding-top: 10px;
-	// padding-bottom: 8px;
   height: 33px;
   display: flex;
   align-items: center;
+  &.container-big {
+    @include media-md {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    @include media-lg {
+      max-width: 708px;
+    }
+    @include media-xl {
+      max-width: unset;
+    }
+  }
   .row {
     height: 100%;
   }
@@ -47,7 +57,7 @@
   }
 	.show-sorting {
 		background: $yellow;
-    @include media-md {
+    @include media-xl {
       display: none;
     }
 	}
@@ -56,7 +66,7 @@
     padding-left: 16px;
     background: $gray;
     color: white;
-    @include media-md {
+    @include media-xl {
       display: none;
     }
   }
@@ -150,6 +160,46 @@
     opacity: 1;
     font-weight: bold;
     text-decoration: underline;
+  }
+  .filter__btn-pc {
+    cursor: pointer;
+  }
+  .remove-filters {
+    cursor: pointer;
+    opacity: .5;
+    &:hover {
+      @extend %transition;
+      opacity: 1;
+    }
+    &:active {
+      @extend %transition;
+      color: $orange;
+    }
+  }
+}
+
+.filter__block-pc {
+  z-index: 100;
+  position: absolute;
+  background: white;
+  padding: 20px 20px 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.filter__block-pc-2 {
+  left: 112px;
+}
+.filter__block-pc.slider {
+  .filter__input input[type=number] {
+    background: white;
+    border: 1px solid $gray;
+    color: $gray;
+  }
+  .noUi-target.custom-slider {
+    border: 1px solid $gray;
+  }
+  .noUi-horizontal .noUi-handle {
+    background: $gray;
   }
 }
 
@@ -592,7 +642,7 @@
   bottom: 56px;
   z-index: 25;
   width: 100%;
-  padding: 8px 16px;
+  padding: 8px 0;
   color: white;
   font-size: 16px;
   line-height: 20px;  
@@ -601,5 +651,8 @@
   }
   &.declined {
     background: $red;
+  }
+  @include media-xl {
+    bottom: 0;
   }
 }
