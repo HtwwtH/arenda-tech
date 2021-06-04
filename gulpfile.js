@@ -49,6 +49,16 @@ function scripts() {
     .pipe(browserSync.stream())
 }
 
+function scriptvalidate() {
+  return src([
+    'app/js/validate-form.js'
+  ])
+    .pipe(concat('validate-form.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream())
+}
+
 // общие стили: хэдер, футер, выпадающее меню каталог, мобильная навигация
 function styles() {
   return src('app/scss/style.scss')
@@ -95,7 +105,7 @@ function build() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/scss/**/*.scss'], pageStyles);
-  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+  watch(['app/js/**/*.js', '!app/js/main.min.js', '!app/js/validate-form.min.js'], scripts);
   watch(['app/*.html']).on('change', browserSync.reload);
 }
 
@@ -103,12 +113,13 @@ exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
+exports.scriptvalidate = scriptvalidate;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.pageStyles = pageStyles;
 
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, pageStyles, scripts, browsersync, watching);
+exports.default = parallel(styles, pageStyles, scripts, scriptvalidate, browsersync, watching);
 
 
