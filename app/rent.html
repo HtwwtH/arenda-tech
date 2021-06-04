@@ -47,7 +47,7 @@
             </li>
           </ul>
         </nav>
-        <button class="light-gray-btn d-xxl-block">Получить консультацию</button>
+        <button class="getconsult light-gray-btn d-xxl-block">Получить консультацию</button>
       </div>
     </div>
 
@@ -552,7 +552,7 @@
               
             </div>
             <div class="row align-center">
-              <button class="orange-btn col-12 col-xl-3 col-xxl-2 mb-xl-2xl mb-xxl-4xl d-none d-xl-flex"><span>Получить консультацию</span></button>
+              <button class="getconsult orange-btn col-12 col-xl-3 col-xxl-2 mb-xl-2xl mb-xxl-4xl d-none d-xl-flex"><span>Получить консультацию</span></button>
             </div>
           </div>
         </div>
@@ -567,7 +567,7 @@
           </p>
           <p class="mb-m">Компания “Красроуд" оказывает услуги по аренде спецтехники (аренда крана, аренда автовышки, аренда самосвалов) как крупнейшим строительным и производственным компаниям, так и представителям малого бизнеса, частным заказчикам.
   Также мы предлагаем услуги аренды следующей строительной техники: вышка, компрессор, бетононасос, автогрейдер, бульдозер, фронтальный погрузчик и др. </p>
-          <button class="orange-btn col-12"><span>Получить консультацию</span></button>
+          <button class="getconsult orange-btn col-12"><span>Получить консультацию</span></button>
         </div>
       </section>
 
@@ -815,7 +815,7 @@
               
             </div>
             <div class="row align-center">
-              <button class="orange-btn col-12 mb-lg-m mb-xl-0 mr-md-l"><span>Получить консультацию</span></button>
+              <button class="getconsult orange-btn col-12 mb-lg-m mb-xl-0 mr-md-l"><span>Получить консультацию</span></button>
             </div>
           </div>
         </div>
@@ -978,6 +978,157 @@
       </div>
     </footer>
 
+    <!-- Validate form заказать обратный звонок -->
+    <div class="validate_fade getcall-form">
+      <div class="validate-form">
+        <button class="form-close">
+          <img src="./images/icons/close-form.png" alt="">
+        </button>
+        <div class="form-container">
+          <div class="validate-form__title mb-xl mb-xsm-m">
+            <span>Заказать обратный звонок</span>
+            <button class="m-form-close">
+              <img src="./images/icons/close-form-mobile.png" alt="">
+            </button>
+          </div>
+          <form action="./thank.html" method="" class="validate">
+            <input id="form_theme" type="hidden" name="theme" value="Заказать обратный звонок" />
+            <input id="user_id" type="hidden" name="user_id" value="" />
+
+            <div class="validate-form__field">
+              <span class="validate-form__subtitle h3-style mb-2xs">Имя<mark>*</mark></span>
+              <input type="text" name="cname" placeholder="Иван Тванов" value="" class="field required" />
+            </div>
+
+            <div class="validate-form__field">
+              <span class="validate-form__subtitle h3-style mb-2xs">Телефон<mark>*</mark></span>
+              <input type="text" name="phone" placeholder="+7 (000) 000-00-00" value="" class="phone field required" />
+            </div>
+
+            <div class="validate-form__checkbox d-flex mb-xl">
+              <input type="checkbox" class="custom-checkbox" id="terms" name="terms" checked="true">
+              <label for="terms" class="validate-form__privacy">
+                <p>Даю
+                  право на обработку своих
+                  персональных данных<br />и <a>соглашаюсь с политикой конфиденциальности.</a>
+                </p>
+              </label>
+              <p class="terms-error">*необходимо согласие</p>
+            </div>
+            
+            <div class="validate-form__button">
+              <button type="submit" class="orange-btn"><span>Заказать звонок</span></button>
+            </div>
+            <div class="validate-form__button_mobile">
+              <button type="submit" class="orange-btn"><span>Заказать звонок</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End ofValidate form -->
+
+    <!-- Validate form получить консультацию -->
+    <div class="validate_fade getconsult-form">
+      <div class="validate-form">
+        <button class="form-close">
+          <img src="./images/icons/close-form.png" alt="">
+        </button>
+        <div class="form-container">
+          <div class="validate-form__title mb-xl mb-xsm-m">
+            <span>Получить консультацию</span>
+            <button class="m-form-close">
+              <img src="./images/icons/close-form-mobile.png" alt="">
+            </button>
+          </div>
+          <form action="./thank.html" method="" class="validate">
+            <input id="form_theme" type="hidden" name="theme" value="Заказать обратный звонок" />
+            <input id="user_id" type="hidden" name="user_id" value="" />
+
+            <div class="validate-form__field">
+              <span class="validate-form__subtitle h3-style mb-2xs">Имя<mark>*</mark></span>
+              <input type="text" name="cname" placeholder="Иван Тванов" value="" class="field required" />
+            </div>
+
+            <div class="validate-form__field">
+              <span class="validate-form__subtitle h3-style mb-2xs">Телефон<mark>*</mark></span>
+              <input type="text" name="phone" placeholder="+7 (000) 000-00-00" value="" class="phone field required" />
+            </div>
+
+            <div class="validate-form__checkbox d-flex mb-xl">
+              <input type="checkbox" class="custom-checkbox" id="terms" name="terms" checked="true">
+              <label for="terms" class="validate-form__privacy">
+                <p>Даю
+                  право на обработку своих
+                  персональных данных<br />и <a>соглашаюсь с политикой конфиденциальности.</a>
+                </p>
+              </label>
+              <p class="terms-error">*необходимо согласие</p>
+            </div>
+            
+            <div class="validate-form__button">
+              <button type="submit" class="orange-btn"><span>Получить консультацию</span></button>
+            </div>
+            <div class="validate-form__button_mobile">
+              <button type="submit" class="orange-btn"><span>Получить консультацию</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End ofValidate form -->
+
+    <!-- Validate form заказать обратный звонок -->
+    <div class="validate_fade getproduct-form">
+      <div class="validate-form">
+        <button class="form-close">
+          <img src="./images/icons/close-form.png" alt="">
+        </button>
+        <div class="form-container">
+          <div class="validate-form__title mb-xs">
+            <!-- скриптом вставляется название по названию кнопки -->
+            <span></span>
+            <button class="m-form-close">
+              <img src="./images/icons/close-form-mobile.png" alt="">
+            </button>
+          </div>
+          <form action="./thank.html" method="" class="validate">
+            <input id="form_theme" type="hidden" name="theme" value="Заказать обратный звонок" />
+            <input id="user_id" type="hidden" name="user_id" value="" />
+
+            <div class="validate-form__field">
+              <span class="validate-form__subtitle h3-style mb-2xs">Имя<mark>*</mark></span>
+              <input type="text" name="cname" placeholder="Иван Тванов" value="" class="field required" />
+            </div>
+
+            <div class="validate-form__field">
+              <span class="validate-form__subtitle h3-style mb-2xs">Телефон<mark>*</mark></span>
+              <input type="text" name="phone" placeholder="+7 (000) 000-00-00" value="" class="phone field required" />
+            </div>
+
+            <div class="validate-form__checkbox d-flex mb-xl">
+              <input type="checkbox" class="custom-checkbox" id="terms" name="terms" checked="true">
+              <label for="terms" class="validate-form__privacy">
+                <p>Даю
+                  право на обработку своих
+                  персональных данных<br />и <a>соглашаюсь с политикой конфиденциальности.</a>
+                </p>
+              </label>
+              <p class="terms-error">*необходимо согласие</p>
+            </div>
+            
+            <div class="validate-form__button">
+              <button type="submit" class="orange-btn"><span>Заказать звонок</span></button>
+            </div>
+            <div class="validate-form__button_mobile">
+              <button type="submit" class="orange-btn"><span>Заказать звонок</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End ofValidate form -->
+
     <nav class="mobile-navigation">
       <ul>
         <li class="home-tab active">
@@ -1023,6 +1174,9 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/validate-form.js"></script>
 </body>
 
 </html>
