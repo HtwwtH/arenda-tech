@@ -236,19 +236,19 @@ $(document).ready(function () {
     })
   })
   // действия после взаимодействия с фильтр-слайдером
-  $('#input-min-value').on("input", function () {
+  $(".volume-filter").find('#input-min-value').on("input", function () {
     countFilters.addVolume();
     showFilterAlert();
   })
-  $('#input-max-value').on("input", function () {
+  $(".volume-filter").find('#input-max-value').on("input", function () {
     countFilters.addVolume();
     showFilterAlert();
   })
-  $('.noUi-handle-lower').on("touchend mouseup", function () {
+  $(".volume-filter").find('.noUi-handle-lower').on("touchend mouseup", function () {
     countFilters.addVolume();
     showFilterAlert();
   })
-  $('.noUi-handle-upper').on("touchend mouseup", function () {
+  $(".volume-filter").find('.noUi-handle-upper').on("touchend mouseup", function () {
     countFilters.addVolume();
     showFilterAlert();
   })
@@ -347,4 +347,55 @@ $(document).ready(function () {
       parent.find('.pagin-3').removeClass('active');
     }
   })
+
+  // show subcategory filters on pc version
+  $filter1 = $(".filter__block-pc-1");
+  $filter2 = $(".filter__block-pc-2");
+  // filter 1
+  $(".filter__btn-pc-1").mouseenter(function () {
+    $filter1.css({ opacity: 0 }).animate({ opacity: 1 });
+    $filter1.addClass('visible');
+  });
+  $filter1.mouseleave(function (e) {
+
+    if (e.relatedTarget.className.indexOf("filter__btn-pc") != -1) { }
+    else {
+      $filter1.css({ opacity: 1 }).animate({ opacity: 0 });
+      setTimeout(function () {
+        $filter1.removeClass('visible');
+      }, 500)
+    }
+
+  });
+  $(".filter__btn-pc-1").mouseleave(function (e) {
+    if ((e.relatedTarget).outerHTML.indexOf("filter__block-pc-1") == -1) {
+      $filter1.css({ opacity: 1 }).animate({ opacity: 0 });
+      setTimeout(function () {
+        $filter1.removeClass('visible');
+      }, 500)
+    }
+  });
+  // filter 2
+  $(".filter__btn-pc-2").mouseenter(function () {
+    $filter2.css({ opacity: 0 }).animate({ opacity: 1 });
+    $filter2.addClass('visible');
+  });
+  $filter2.mouseleave(function (e) {
+    if (e.relatedTarget.className.indexOf("filter__btn-pc") != -1) { }
+    else {
+      $filter2.css({ opacity: 1 }).animate({ opacity: 0 });
+      setTimeout(function () {
+        $filter2.removeClass('visible');
+      }, 500)
+    }
+
+  });
+  $(".filter__btn-pc-2").mouseleave(function (e) {
+    if ((e.relatedTarget).outerHTML.indexOf("filter__block-pc-2") == -1) {
+      $filter2.css({ opacity: 1 }).animate({ opacity: 0 });
+      setTimeout(function () {
+        $filter2.removeClass('visible');
+      }, 500)
+    }
+  });
 })

@@ -542,19 +542,67 @@
             <img class="close ml-2xs d-none" src="./images/icons/icon_close.svg" alt="">
           </button>
 
-          <div class="sort-pc d-none d-md-flex ">
-            <div class="row container align-center justify-row">
-              <p class="mr-2xs">Сортировка:</p>
-              <button class="mr-3xs active">По возрастанию цены</button>
-              <button class="mr-3xs">По убыванию цены</button>
-              <button class="mr-3xs">По популярности</button>
+          <div class="sort-pc d-none d-xl-flex ">
+            <div id="sortfilter" class="row container align-center justify-between">
+              <div class="sortfilter__tabs d-none d-xl-flex">
+                <p class="filter__btn-pc filter__btn-pc-1 dropdown mr-l">Бренды</p>
+                <p class="remove-filters mr-l">Сбросить фильтры</p>
+              </div>
+
+              <div class="d-flex">
+                <p class="mr-2xs">Сортировка:</p>
+                <button class="mr-3xs active">По возрастанию цены</button>
+                <button class="mr-3xs">По убыванию цены</button>
+                <button class="mr-3xs">По популярности</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+            <!-- выпадающие фильтры пк версия -->
+      <div class="container relative d-none d-xl-block">
+        <!-- выпадающее окно фильтр с радиокнопками пк версия -->
+        <div class="filter__block-pc radio filter__block-pc-1">
+          <div class="form_radio filter_radio">
+            <input id="pc__filter-1-radio-1" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-1">Case</label>
+          </div>
+          <div class="form_radio filter_radio">
+            <input id="pc__filter-1-radio-2" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-2">Hitachi</label>
+          </div>
+          <div class="form_radio filter_radio">
+            <input id="pc__filter-1-radio-3" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-3">LiuGong</label>
+          </div>
+          <div class="form_radio filter_radio">
+            <input id="pc__filter-1-radio-4" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-4">Doosan</label>
+          </div>
+          <div class="form_radio filter_radio">
+            <input id="pc__filter-1-radio-5" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-5">AmphiMaster</label>
+          </div>
+          <div class="form_radio filter_radio">
+            <input id="pc__filter-1-radio-6" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-6">Waterking</label>
+          </div>
+          <div class="form_radio filter_radio">
+            <input id="pc__filter-1-radio-7" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-7">МТЗ</label>
+          </div>
+          <div class="form_radio filter_radio">
+            <input id="pc__filter-1-radio-8" type="radio" name="radio" value="1">
+            <label for="pc__filter-1-radio-8">NewHolland</label>
+          </div>
+        </div>
+
+      </div>
+
       <!-- Выпадающее окно фильтр мобильной версии -->
       <div class="filter-mobile container pt-s pb-s">
-        <div class="filter-mobile__inner">
+        <div class="filter-mobile__inner pl-md-xs pr-md-xs">
           <form class="brands-filter">
             <div class="row mb-xs">
               <p>Бренды</p>
@@ -670,7 +718,7 @@
       </div>
       <!-- Выпадающее окно сортировка мобильной версии -->
       <div class="sort-mobile container pt-s pb-s">
-        <form class="sort-mobile__inner">
+        <form class="sort-mobile__inner pl-md-xs pr-md-xs">
           <p class="mb-xs">Сортировка</p>
           <div class="form_radio sort_radio">
             <input id="sortradio-1" type="radio" name="radio" value="1" checked>
@@ -697,7 +745,7 @@
 
           <!-- product card with 1 photo -->
           <div class="product-card mb-2xs">
-            <a href="#">
+            <a href="./product.html">
               <div class="product__photo">
                 <img src="./images/icons/label.png" alt="" class="hit">
                 <img src="./images/category/photo_product.jpg" alt="" class="photo">
@@ -707,7 +755,7 @@
               <div class="pagin pagin-1 active showPhoto1"><div></div></div>
             </div>
             
-            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <a href="./product.html" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
             <div class="product__info d-xl-block">
               <div class="row product__parameter justify-between">
                 <span class="mr-3xs">Эксплутационнная масса</span>
@@ -732,7 +780,7 @@
 
           <!-- product card with 2 photo -->
           <div class="product-card mb-2xs">
-            <a href="#">
+            <a href="./product.html">
               <div class="product__photo">
                 <img src="./images/icons/label.png" alt="" class="hit">
                 <img src="./images/category/photo_product.jpg" alt="" class="photo photo-1">
@@ -746,7 +794,7 @@
               <div class="pagin pagin-2 pr-2xs showPhoto2"><div></div></div>
             </div>
             
-            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <a href="./product.html" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
             <div class="product__info d-xl-block">
               <div class="row product__parameter justify-between">
                 <span class="mr-3xs">Эксплутационнная масса</span>
@@ -771,7 +819,7 @@
 
           <!-- product card with 3 photo -->
           <div class="product-card mb-2xs">
-            <a href="#">
+            <a href="./product.html">
               <div class="product__photo">
                 <img src="./images/icons/label.png" alt="" class="hit">
                 <img src="./images/category/photo_product.jpg" alt="" class="photo photo-1">
@@ -788,7 +836,7 @@
               <div class="pagin pagin-3 pr-2xs showPhoto3"><div></div></div>
             </div>
             
-            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <a href="./product.html" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
             <div class="product__info d-xl-block">
               <div class="row product__parameter justify-between">
                 <span class="mr-3xs">Эксплутационнная масса</span>
@@ -813,7 +861,7 @@
 
           <!-- product card with 1 photo -->
           <div class="product-card mb-2xs">
-            <a href="#">
+            <a href="./product.html">
               <div class="product__photo">
                 <img src="./images/icons/label.png" alt="" class="hit">
                 <img src="./images/category/photo_product.jpg" alt="" class="photo">
@@ -823,7 +871,7 @@
               <div class="pagin pagin-1 active showPhoto1"><div></div></div>
             </div>
             
-            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <a href="./product.html" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
             <div class="product__info d-xl-block">
               <div class="row product__parameter justify-between">
                 <span class="mr-3xs">Эксплутационнная масса</span>
@@ -851,7 +899,7 @@
 
           <!-- product card with 2 photo -->
           <div class="product-card mb-2xs">
-            <a href="#">
+            <a href="./product.html">
               <div class="product__photo">
                 <img src="./images/icons/label.png" alt="" class="hit">
                 <img src="./images/category/photo_product.jpg" alt="" class="photo photo-1">
@@ -865,7 +913,7 @@
               <div class="pagin pagin-2 pr-2xs showPhoto2"><div></div></div>
             </div>
             
-            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <a href="./product.html" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
             <div class="product__info d-xl-block">
               <div class="row product__parameter justify-between">
                 <span class="mr-3xs">Эксплутационнная масса</span>
@@ -893,7 +941,7 @@
 
           <!-- product card with 3 photo -->
           <div class="product-card mb-2xs">
-            <a href="#">
+            <a href="./product.html">
               <div class="product__photo">
                 <img src="./images/icons/label.png" alt="" class="hit">
                 <img src="./images/category/photo_product.jpg" alt="" class="photo photo-1">
@@ -910,7 +958,7 @@
               <div class="pagin pagin-3 pr-2xs showPhoto3"><div></div></div>
             </div>
             
-            <a href="#" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
+            <a href="./product.html" class="product__title hover-yellow"><span>Гусеничный экскаватор Doosan S420LC-V</span></a>
             <div class="product__info d-xl-block">
               <div class="row product__parameter justify-between">
                 <span class="mr-3xs">Эксплутационнная масса</span>
