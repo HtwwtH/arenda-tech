@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // выпадающее меню под хэдером на пк версии
   // show catalog submenu on pc version
   $submenu = $(".header__catalog");
   $("#showCatalog").mouseenter(function () {
@@ -26,22 +27,7 @@ $(document).ready(function () {
     }
   });
 
-  // show search line on mobile version
-  $search = $(".search__block_mobile");
-  $searchBtn = $("#showSearch");
-  $searchBtn.click(function () {
-    if ($search.hasClass('visible')) {
-      $search.css({ opacity: 1 }).animate({ opacity: 0 }, 200);
-      setTimeout(function () {
-        $search.removeClass('visible');
-      }, 300)
-    }
-    else {
-      $search.addClass('visible');
-      $search.css({ opacity: 0 }).animate({ opacity: 1 }, 200);
-    }
-  })
-
+  // на странице каталога catalog.html выпадающие подкатегории
   // slide down subcategories on catalog page on mobile version
   $catalogContent = $('.catalog-section .catalog-content');
   $catalogCategory = $('.category');
@@ -65,6 +51,76 @@ $(document).ready(function () {
 
   })
 
+  // раскрытие строки поиска по кнопке в мобильной версии
+  // show search line on mobile version
+  $search = $(".search__block_mobile");
+  $searchBtn = $("#showSearch");
+  $searchBtn.click(function () {
+    if ($search.hasClass('visible')) {
+      $search.css({ opacity: 1 }).animate({ opacity: 0 }, 200);
+      setTimeout(function () {
+        $search.removeClass('visible');
+      }, 300)
+    }
+    else {
+      $search.addClass('visible');
+      $search.css({ opacity: 0 }).animate({ opacity: 1 }, 200);
+    }
+  })
+
+  // на странице подкатегорий subcategory.html раскрыть фильтры
+  // in subcategory show filters on pc version
+  $filter1 = $(".filter__block-pc-1");
+  $filter2 = $(".filter__block-pc-2");
+  // filter 1
+  $(".filter__btn-pc-1").mouseenter(function () {
+    $filter1.css({ opacity: 0 }).animate({ opacity: 1 });
+    $filter1.addClass('visible');
+  });
+  $filter1.mouseleave(function (e) {
+
+    if (e.relatedTarget.className.indexOf("filter__btn-pc") != -1) { }
+    else {
+      $filter1.css({ opacity: 1 }).animate({ opacity: 0 });
+      setTimeout(function () {
+        $filter1.removeClass('visible');
+      }, 500)
+    }
+
+  });
+  $(".filter__btn-pc-1").mouseleave(function (e) {
+    if ((e.relatedTarget).outerHTML.indexOf("filter__block-pc-1") == -1) {
+      $filter1.css({ opacity: 1 }).animate({ opacity: 0 });
+      setTimeout(function () {
+        $filter1.removeClass('visible');
+      }, 500)
+    }
+  });
+  // filter 2
+  $(".filter__btn-pc-2").mouseenter(function () {
+    $filter2.css({ opacity: 0 }).animate({ opacity: 1 });
+    $filter2.addClass('visible');
+  });
+  $filter2.mouseleave(function (e) {
+    if (e.relatedTarget.className.indexOf("filter__btn-pc") != -1) { }
+    else {
+      $filter2.css({ opacity: 1 }).animate({ opacity: 0 });
+      setTimeout(function () {
+        $filter2.removeClass('visible');
+      }, 500)
+    }
+
+  });
+  $(".filter__btn-pc-2").mouseleave(function (e) {
+    if ((e.relatedTarget).outerHTML.indexOf("filter__block-pc-2") == -1) {
+      $filter2.css({ opacity: 1 }).animate({ opacity: 0 });
+      setTimeout(function () {
+        $filter2.removeClass('visible');
+      }, 500)
+    }
+  });
+
+  // на странице подкатегорий subcategory.html раскрыть сортировку на мобильной вресии
   // show sorting on mobile
   $sortingBtn = $('#showSorting');
   $sorting = $('.sort-mobile');
@@ -179,6 +235,7 @@ $(document).ready(function () {
   }
   let countFilters = new CountFilters(); //инициализация класса
 
+  // на странице подкатегорий subcategory.html раскрыть фильтры на мобильной версии
   // show filters on mobile
   $filterBtn = $('#showFilters');
   $filters = $('.filter-mobile');
@@ -276,6 +333,7 @@ $(document).ready(function () {
     }, 4000);
   })
 
+  // в мини карточках товара смена изображений при наведении
   // change photo hover effect on product card, for pc
   function findParent(elem) {
     if (elem.attr('class').indexOf('hover-block') != -1) {
@@ -348,54 +406,220 @@ $(document).ready(function () {
     }
   })
 
-  // show subcategory filters on pc version
-  $filter1 = $(".filter__block-pc-1");
-  $filter2 = $(".filter__block-pc-2");
-  // filter 1
-  $(".filter__btn-pc-1").mouseenter(function () {
-    $filter1.css({ opacity: 0 }).animate({ opacity: 1 });
-    $filter1.addClass('visible');
-  });
-  $filter1.mouseleave(function (e) {
+  // формы обратной связи
+  // validate forms
+  $('input[name="phone"]').mask('+7 (000) 000-00-00');
 
-    if (e.relatedTarget.className.indexOf("filter__btn-pc") != -1) { }
+  // заказать обратный звонок
+  const Btn = $(".getcall");
+  const form = $(".validate_fade.getcall-form");
+  const closeBtn = $(".form-close");
+  const mcloseBtn = $(".m-form-close");
+  var validator = form.find(".validate").validate(
+    {
+      rules: {
+        cname: {
+          required: true,
+          minlength: 2
+        },
+        phone: {
+          required: true,
+          minlength: 18
+        }
+      },
+      messages: {
+        cname: {
+          required: "*не заполненное поле",
+          minlength: "*слишком короткое имя"
+        },
+        phone: {
+          required: "*не заполненное поле",
+          minlength: "*слишком короткий номер"
+        }
+      }
+    }
+  );
+  Btn.click(function () {
+    form.fadeIn(300);
+  });
+  closeBtn.click(function () {
+    form.fadeOut(300);
+    validator.resetForm();
+  });
+  mcloseBtn.click(function () {
+    form.fadeOut(300);
+    validator.resetForm();
+  });
+  $(document).keyup(function (e) {
+    if (e.keyCode === 27)
+      form.fadeOut(300);   // esc
+    validator.resetForm();
+  });
+  $(document).mouseup(function (e) {
+    var div = $(".validate-form");
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      form.fadeOut(300);
+      validator.resetForm();
+    }
+  });
+
+  // получить консультацию
+  const BtnConsult = $(".getconsult");
+  const formConsult = $(".validate_fade.getconsult-form");
+  var validatorConsult = formConsult.find(".validate").validate(
+    {
+      rules: {
+        cname: {
+          required: true,
+          minlength: 2
+        },
+        phone: {
+          required: true,
+          minlength: 18
+        }
+      },
+      messages: {
+        cname: {
+          required: "*не заполненное поле",
+          minlength: "*слишком короткое имя"
+        },
+        phone: {
+          required: "*не заполненное поле",
+          minlength: "*слишком короткий номер"
+        }
+      }
+    }
+  );
+  BtnConsult.click(function () {
+    formConsult.fadeIn(300);
+  });
+  closeBtn.click(function () {
+    formConsult.fadeOut(300);
+    validatorConsult.resetForm();
+  });
+  mcloseBtn.click(function () {
+    formConsult.fadeOut(300);
+    validatorConsult.resetForm();
+  });
+  $(document).keyup(function (e) {
+    if (e.keyCode === 27)
+      formConsult.fadeOut(300);   // esc
+    validatorConsult.resetForm();
+  });
+  $(document).mouseup(function (e) {
+    var div = $(".validate-form");
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      formConsult.fadeOut(300);
+      validatorConsult.resetForm();
+    }
+  })
+
+  // арендовать / узнать цену
+  const BtnProduct = $(".getproduct");
+  const formProduct = $(".validate_fade.getproduct-form");
+  var validatorProduct = formProduct.find(".validate").validate(
+    {
+      rules: {
+        cname: {
+          required: true,
+          minlength: 2
+        },
+        phone: {
+          required: true,
+          minlength: 18
+        }
+      },
+      messages: {
+        cname: {
+          required: "*не заполненное поле",
+          minlength: "*слишком короткое имя"
+        },
+        phone: {
+          required: "*не заполненное поле",
+          minlength: "*слишком короткий номер"
+        }
+      }
+    }
+  );
+  BtnProduct.click(function () {
+    if ($(".validate-form__title2")) {
+      $(".validate-form__title2").remove();
+    }
+    if ($("#form_product")) {
+      $("#form_product").remove();
+    }
+    const formName = ($(this).text());
+    const productName = $(this).attr("name");
+
+    $(".validate-form__title span").text(formName);
+    $(".validate-form__button button span").text(formName);
+
+    if (productName) {
+      $(".validate-form__title").after(function () {
+        return '<p class="validate-form__title2">' + productName + '</p>';
+      });
+      $("#form_theme").after(function () {
+        return '<input id="form_product" type="hidden" name="product" value="' + productName + '" />';
+      });
+    }
+    formProduct.fadeIn(300);
+  });
+  closeBtn.click(function () {
+    formProduct.fadeOut(300);
+    validatorProduct.resetForm();
+  });
+  mcloseBtn.click(function () {
+    formProduct.fadeOut(300);
+    validatorProduct.resetForm();
+  });
+  $(document).keyup(function (e) {
+    if (e.keyCode === 27)
+      formProduct.fadeOut(300);   // esc
+    validatorProduct.resetForm();
+  });
+  $(document).mouseup(function (e) {
+    var div = $(".validate-form");
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      formProduct.fadeOut(300);
+      validatorProduct.resetForm();
+    }
+  })
+
+  // click checkbox in form - disable button
+  $('.custom-checkbox').click(function () {
+    if ($(this).prop("checked")) {
+      $('.terms-error').css('display', 'none');
+      $('button[type="submit"]').removeAttr('disabled');
+      $('button[type="submit"]').css('opacity', '1');
+    }
     else {
-      $filter1.css({ opacity: 1 }).animate({ opacity: 0 });
-      setTimeout(function () {
-        $filter1.removeClass('visible');
-      }, 500)
+      $('.terms-error').css('display', 'block');
+      $('button[type="submit"]').prop('disabled', 'true');
+      $('button[type="submit"]').css('opacity', '.5');
     }
+  })
 
-  });
-  $(".filter__btn-pc-1").mouseleave(function (e) {
-    if ((e.relatedTarget).outerHTML.indexOf("filter__block-pc-1") == -1) {
-      $filter1.css({ opacity: 1 }).animate({ opacity: 0 });
-      setTimeout(function () {
-        $filter1.removeClass('visible');
-      }, 500)
-    }
-  });
-  // filter 2
-  $(".filter__btn-pc-2").mouseenter(function () {
-    $filter2.css({ opacity: 0 }).animate({ opacity: 1 });
-    $filter2.addClass('visible');
-  });
-  $filter2.mouseleave(function (e) {
-    if (e.relatedTarget.className.indexOf("filter__btn-pc") != -1) { }
-    else {
-      $filter2.css({ opacity: 1 }).animate({ opacity: 0 });
-      setTimeout(function () {
-        $filter2.removeClass('visible');
-      }, 500)
-    }
+  // скрывать длинные хлеб крошки на мобильной версии
+  if ($(document).width() < 768) {
+    var bread = $('.breadcrumbs');
+    var breadMobile = bread.clone().removeClass('container').addClass('bread-mobile');
+    var length = bread.children('.item').length;
+    if (length > 2) {
+      $.each(bread.children('.item'), function (index, elem) {
+        var text = $(elem).find('span').text();
+        if (index == 0)
+          $(elem).after('<button id="showBread" class="show-bread"><span>...</span></button>')
+        if (index != 0 && index != length - 1)
+          $(elem).css('display', 'none');
+      })
 
-  });
-  $(".filter__btn-pc-2").mouseleave(function (e) {
-    if ((e.relatedTarget).outerHTML.indexOf("filter__block-pc-2") == -1) {
-      $filter2.css({ opacity: 1 }).animate({ opacity: 0 });
-      setTimeout(function () {
-        $filter2.removeClass('visible');
-      }, 500)
+      bread.after(breadMobile);
     }
-  });
+  }
+  $('#showBread').click(function () {
+    if ($('.bread-mobile').is(':visible'))
+      $('.bread-mobile').slideUp(300);
+    else
+      $('.bread-mobile').slideDown(300);
+  })
 })
