@@ -39,7 +39,7 @@ body {
 	font-style: normal;
   font-weight: 700;
 	src: url(../fonts/Bebas_Neue/BebasNeue-Bold.ttf);
-	font-display: swap;
+	font-display: fallback;
 }
 
 .wrapper {
