@@ -227,7 +227,7 @@
   align-items: flex-end;
   input[type=number] {
     outline: none;
-    text-align: center;
+    text-align: left;
     padding: 5px 10px 5px 10px;
     width: 108px;
     height: 22px;
@@ -316,10 +316,14 @@
       width: 100%;
       height: 100%;
       border-radius: 5px;
+      border: 1px solid $orange;
       background: $orange;
       opacity: 0;
       z-index: -3;
       @extend %transition;
+    }
+    &:hover {
+      border: 1px solid $orange;
     }
     &:hover:before {
       opacity: 1;
@@ -341,6 +345,9 @@
       opacity: 0;
       z-index: -2;
       @extend %transition;
+    }
+    &:active {
+      border: 1px solid transparent;
     }
     &:active:after {
       opacity: 1;
@@ -373,6 +380,7 @@
     display: block;
   }
 }
+.swipeView::-webkit-scrollbar { width: 0;}
 
 // секция с карточками товара
 .main-catalog .justify-between-container {
@@ -569,10 +577,11 @@
     }
     button.rent-btn {
       padding: 6.5px 8.5px;
-      width: 133px;
+      width: 100%;
       height: 33px;
       margin: 0 auto;
       @include media-xl {
+        width: 133px;
         margin-right: 0;
         margin-left: auto;
       }
@@ -667,7 +676,7 @@
   &.declined {
     background: $red;
   }
-  @include media-xl {
+  @include media-lg {
     bottom: 0;
   }
 }

@@ -43,5 +43,7 @@
   }
 }
 .error404__button, .thank__button {
-  max-width: 288px;
+  @include media-sm {
+    max-width: 288px;
+  }
 }

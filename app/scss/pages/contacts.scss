@@ -17,8 +17,12 @@
   }
 }
 
+.contacts__map {
+  width: 100%;
+}
+
 .map__container {
-  width: 288px;
+  width: 100%;
   height: 252px;
   border-radius: 10px;
   background: $light-gray;

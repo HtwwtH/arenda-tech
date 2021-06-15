@@ -162,7 +162,7 @@
     height: 757px;
   }
   @include media-xl {
-    height: 557px;
+    height: 545px;
   }
 
   .catalog__inner {
@@ -271,9 +271,11 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     li:not(:last-child){
       margin-right: 35px;
@@ -432,14 +434,13 @@
     path {
       fill: $gray;
       transition: fill .2s ease-in-out;
-      &:hover {
-        fill: $orange;
-      }
-      &:active {
-        fill: white;
-      }
     }
-    
+    &:hover path {
+      fill: $orange;
+    }
+    &:active path {
+      fill: white;
+    }
   }
 }
 
@@ -509,7 +510,6 @@
       display: block;
       font-size: 12px;
       line-height: 15px;
-      margin-bottom: 8px;
     }
     @include media-xl {
       flex-direction: row;
@@ -542,7 +542,6 @@
     display: block;
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 3px;
   }
   .info-content a, .info-content ul li a {
       color: white;

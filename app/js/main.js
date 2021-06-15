@@ -38,7 +38,7 @@ $(document).ready(function () {
     }
 
   })
-  $('.showSubmenu').click(function () {
+  $catalogContent.find('.showSubmenu').click(function () {
     $('.category__list').each(function () {
       if ($(this).is(':visible')) {
         $(this).slideUp(300);
