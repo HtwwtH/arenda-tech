@@ -4,13 +4,15 @@
 @import '../media';
 
 .contacts {
-  .social-icons a path {
-    fill: $yellow;
-    &:hover {
+  .social-icons a {
+    path {
+      fill: $yellow;
+    }
+    &:hover path {
       @extend %transition;
       fill: $orange;
     }
-    &:active {
+    &:active path {
       @extend %transition;
       fill: $gray;
     }
